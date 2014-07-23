@@ -59,3 +59,28 @@
 
 <section class="container" role="document">
 	<?php do_action('foundationPress_after_header'); ?>
+
+<header id="homepage-hero" role="banner">
+	<div class="row">
+		<div class="small-12 medium-7 columns">
+			<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+			<h4 class="subheader"><?php bloginfo('description'); ?></h4>
+		</div>
+
+		<div class="large-12 medium-12 columns">
+			<ul class="inline-list">
+				<li><a href=""><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/fb_s.png"></a></li>
+				<li><a href=""><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/twitter_s.png"></a></li>
+				<li><a href=""><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/tumblr_s.png"></a></li>
+				<li><a href=""><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/rss_s.png"></a></li>
+				<li><a href=""><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/google_s.png"></a></li>
+			</ul>
+		</div> 
+
+		<!-- <div class="floatingyeti show-for-medium-up">
+			<br><br><br>
+			 <img alt="digital3empire" src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/paint2.png">
+		</div>-->
+	</div>
+
+</header>
