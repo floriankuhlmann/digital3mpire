@@ -1,8 +1,9 @@
 body {
-  background: url(../assets/img/bg/temple3sw6.jpg) repeat left top fixed;
+ /* background: url(../assets/img/bg/temple3sw6.jpg) repeat left top fixed;*/
 
 }
 
+/*
 #homepage-hero {
 	background:url("../assets/img/bg/triangle-in-the-mountains_2.jpg") repeat scroll top center rgba(26, 7, 104, 1);
 }
@@ -10,8 +11,8 @@ body {
 #homepage-hero .floatingyeti img {
     max-width: 100%;
 }
-
+*/
 #homepage-hero h1 a, #homepage-hero h4 {
-    color: #000;
+
     padding-bottom:10px;
 }

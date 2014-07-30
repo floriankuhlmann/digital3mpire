@@ -20,9 +20,10 @@
 		} else {
 			echo wp_title( ' | ', 'false', 'right' ); bloginfo( 'name' );
 		} ?></title>
-		<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
-		<!-- <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>-->
-		<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		<!-- <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>-->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/app.css" />
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/digital3mpire.css" />
 		
@@ -60,24 +61,24 @@
 <section class="container" role="document">
 	<?php do_action('foundationPress_after_header'); ?>
 
-<header id="homepage-hero" role="banner">
+<header role="banner">
 	<div class="row">
 		<div class="small-12 medium-7 columns">
 			<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
 			<h4 class="subheader"><?php bloginfo('description'); ?></h4>
 		</div>
 
-		<div class="large-12 medium-12 columns">
+		<!-- <div class="large-12 medium-12 columns">
 			<ul class="inline-list">
-				<li><a href=""><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/fb_s.png"></a></li>
-				<li><a href=""><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/twitter_s.png"></a></li>
-				<li><a href=""><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/tumblr_s.png"></a></li>
+				<li><a href="https://www.facebook.com/0floriankuhlmann1"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/fb_s.png"></a></li>
+				<li><a href="https://twitter.com/fkuhlmann"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/twitter_s.png"></a></li>
+				<li><a href="http://lsdsl.tumblr.com/"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/tumblr_s.png"></a></li>
 				<li><a href=""><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/rss_s.png"></a></li>
-				<li><a href=""><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/google_s.png"></a></li>
+				<li><a href="https://twitter.com/fkuhlmann"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/google_s.png"></a></li>
 			</ul>
 		</div> 
 
-		<!-- <div class="floatingyeti show-for-medium-up">
+		<div class="floatingyeti show-for-medium-up">
 			<br><br><br>
 			 <img alt="digital3empire" src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/paint2.png">
 		</div>-->
