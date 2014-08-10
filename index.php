@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row">
-	<div class="small-12 large-12 columns" role="main">
+	<div class="large-10 medium-10 small-12 columns" role="main">
 
 	<?php if ( have_posts() ) : ?>
 

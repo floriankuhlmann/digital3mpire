@@ -1,6 +1,6 @@
 body {
- /* background: url(../assets/img/bg/temple3sw6.jpg) repeat left top fixed;*/
-
+  /*background: url(../assets/img/bg/wave_bg_8_1.jpg) no-repeat left top fixed #000;
+*/
 }
 
 /*
@@ -15,4 +15,30 @@ body {
 #homepage-hero h1 a, #homepage-hero h4 {
 
     padding-bottom:10px;
+    color:#0ef90e;
+}
+
+.updated {
+	font-size: 1.4rem;
+	font-weight:400; 
+	color:#EE0FF6;
+}
+
+header h1 a{
+	color:#62006b;
+}
+
+header h4 {
+	font-family: 'Exo 2', sans-serif;
+}
+
+.post header h2 {
+
+	line-height: 1;
+	color:#fff;
+}
+
+.post header h2 a {
+
+	color:#fff;
 }

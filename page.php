@@ -8,7 +8,7 @@
 	<?php while (have_posts()) : the_post(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
-				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<h2 class="entry-title"><?php the_title(); ?></h2>
 			</header>
 			<?php do_action('foundationPress_page_before_entry_content'); ?>
 			<div class="entry-content">
@@ -19,7 +19,7 @@
 				<p><?php the_tags(); ?></p>
 			</footer>
 			<?php do_action('foundationPress_page_before_comments'); ?>
-			<?php comments_template(); ?>
+			<?php /* comments_template(); */ ?>
 			<?php do_action('foundationPress_page_after_comments'); ?>
 		</article>
 	<?php endwhile;?>

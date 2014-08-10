@@ -41,11 +41,14 @@ $base-font-size: 18px;
 // We use these to control various global styles
 $body-bg: #29003a;
 $body-bg: #000;
- $body-font-color: #fff;
-// $body-font-family: 'Old Standard TT', serif;
-$body-font-family: Courier, 'Times new roman', serif;
+$body-font-color: #ccc;
+// $body-font-family: 'Megrim', cursive;
+// $body-font-family: 'Times new roman', serif;
+//$body-font-family: 'Droid Serif', serif;
+$body-font-family: 'Exo 2', sans-serif;
 // $body-font-family: 'Poiret One', cursive;
-// $body-font-weight: normal;
+$body-font-weight: normal;
+$body-font-weight: 200;
 // $body-font-style: normal;
 
 // We use this to control font-smoothing
@@ -57,8 +60,8 @@ $body-font-family: Courier, 'Times new roman', serif;
 // $default-float: left;
 
 // We use these as default colors throughout
-$primary-color: #03ff03;
-$secondary-color: #ef1df7;
+$primary-color: #ee0ff6;
+$secondary-color: #ee0ff6;
 $alert-color: #ef1df7;
 $success-color: #ef1df7;
 $warning-color: #ef1df7;
@@ -121,19 +124,21 @@ $info-color: #ef1df7;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-$header-font-family: 'Roboto', sans-serif;
-$header-font-family: 'Oswald', sans-serif;
-// $header-font-weight: normal;
+// $header-font-family: 'Roboto', sans-serif;
+// $header-font-family: 'Oswald', sans-serif;
+// $header-font-family: 'Coda', cursive;
+$header-font-family: 'Megrim', cursive;
+$header-font-weight: 600;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: #ccc;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
-// $h2-font-size: rem-calc(37);
+ $h1-font-size: rem-calc(84);
+ $h2-font-size: rem-calc(72);
 // $h3-font-size: rem-calc(27);
 // $h4-font-size: rem-calc(23);
 // $h5-font-size: rem-calc(18);
@@ -142,9 +147,10 @@ $header-font-family: 'Oswald', sans-serif;
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
 // $subheader-font-color: scale-color($header-font-color, $lightness: 35%);
+$subheader-font-color:$primary-color;
 // $subheader-font-weight: normal;
 // $subheader-top-margin: .2rem;
-// $subheader-bottom-margin: .5rem;
+$subheader-bottom-margin: 3.5rem;
 
 // A general <small> styling
 // $small-font-size: 60%;
@@ -152,7 +158,7 @@ $header-font-family: 'Oswald', sans-serif;
 
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
-// $paragraph-font-weight: normal;
+$paragraph-font-weight: 200;
 // $paragraph-font-size: 1rem;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
@@ -1194,17 +1200,18 @@ $topbar-title-font-size: rem-calc(24);
 
 // Set the link colors and styles for top-level nav
 $topbar-link-color: #fff;
-$topbar-link-color-hover: #fff;
-$topbar-link-color-active: #fff;
+$topbar-link-color-hover: #000;
+$topbar-link-color-active: #000;
 $topbar-link-color-active-hover: #fff;
 $topbar-link-weight: bold;
 $topbar-link-font-size: rem-calc(24);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-// $topbar-link-bg-hover: #272727;
+$topbar-link-bg-hover: #fff;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
+$topbar-link-font-family: 'Megrim', cursive;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: $topbar-height / 3;
 

@@ -20,10 +20,10 @@
 		} else {
 			echo wp_title( ' | ', 'false', 'right' ); bloginfo( 'name' );
 		} ?></title>
-		<!-- <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>-->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+
+		<link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,800,800italic,900,900italic,700italic&effect=shadow-multiple|3d-float|neon' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/app.css" />
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/digital3mpire.css" />
 		
@@ -63,8 +63,9 @@
 
 <header role="banner">
 	<div class="row">
-		<div class="small-12 medium-7 columns">
-			<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+		<div class="small-10 medium-10 large-10 columns">
+			<div class="green font-effect-shadow-multiple font-effect-neon"><h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+			</div>
 			<h4 class="subheader"><?php bloginfo('description'); ?></h4>
 		</div>
 
