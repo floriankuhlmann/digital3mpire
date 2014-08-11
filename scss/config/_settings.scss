@@ -61,7 +61,10 @@ $body-font-weight: 200;
 
 // We use these as default colors throughout
 $primary-color: #ee0ff6;
+$primary-color: #02fb1f;
+
 $secondary-color: #ee0ff6;
+$secondary-color: #02fb1f;
 $alert-color: #ef1df7;
 $success-color: #ef1df7;
 $warning-color: #ef1df7;
@@ -148,7 +151,7 @@ $header-font-color: #ccc;
 // $subheader-line-height: 1.4;
 // $subheader-font-color: scale-color($header-font-color, $lightness: 35%);
 $subheader-font-color:$primary-color;
-// $subheader-font-weight: normal;
+$subheader-font-weight: 600;
 // $subheader-top-margin: .2rem;
 $subheader-bottom-margin: 3.5rem;
 

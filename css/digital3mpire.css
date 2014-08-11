@@ -1,6 +1,6 @@
 body {
-  /*background: url(../assets/img/bg/wave_bg_8_1.jpg) no-repeat left top fixed #000;
-*/
+ background: url(../assets/img/bg/wave_bg_13_2.jpg) no-repeat left top fixed #000;
+
 }
 
 /*
@@ -19,9 +19,10 @@ body {
 }
 
 .updated {
-	font-size: 1.4rem;
+	font-size: 1rem;
 	font-weight:400; 
 	color:#EE0FF6;
+	color:#fff;
 }
 
 header h1 a{
@@ -29,7 +30,7 @@ header h1 a{
 }
 
 header h4 {
-	font-family: 'Exo 2', sans-serif;
+	/*font-family: 'Exo 2', sans-serif;*/
 }
 
 .post header h2 {
