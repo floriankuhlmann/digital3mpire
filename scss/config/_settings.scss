@@ -39,13 +39,13 @@ $base-font-size: 18px;
 // Global
 
 // We use these to control various global styles
-$body-bg: #29003a;
-$body-bg: #000;
-$body-font-color: #ccc;
+$body-bg: #006110;
+$body-font-color: #000;
 // $body-font-family: 'Megrim', cursive;
 // $body-font-family: 'Times new roman', serif;
 //$body-font-family: 'Droid Serif', serif;
 $body-font-family: 'Exo 2', sans-serif;
+$body-font-family:Times;
 // $body-font-family: 'Poiret One', cursive;
 $body-font-weight: normal;
 $body-font-weight: 200;
@@ -62,9 +62,11 @@ $body-font-weight: 200;
 // We use these as default colors throughout
 $primary-color: #ee0ff6;
 $primary-color: #02fb1f;
+$primary-color: #fff;
 
 $secondary-color: #ee0ff6;
 $secondary-color: #02fb1f;
+$secondary-color: #fff;
 $alert-color: #ef1df7;
 $success-color: #ef1df7;
 $warning-color: #ef1df7;
@@ -133,7 +135,7 @@ $info-color: #ef1df7;
 $header-font-family: 'Megrim', cursive;
 $header-font-weight: 600;
 // $header-font-style: normal;
-$header-font-color: #ccc;
+$header-font-color: #000	;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -162,7 +164,7 @@ $subheader-bottom-margin: 3.5rem;
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 $paragraph-font-weight: 200;
-// $paragraph-font-size: 1rem;
+$paragraph-font-size: 1.25rem;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
@@ -1182,10 +1184,11 @@ $paragraph-font-weight: 200;
 
 // Background color for the top bar
  $topbar-bg-color: $body-bg;
+$topbar-bg-color: #000;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-$topbar-height: 60px;
+$topbar-height: 30px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1205,14 +1208,14 @@ $topbar-title-font-size: rem-calc(24);
 $topbar-link-color: #fff;
 $topbar-link-color-hover: #000;
 $topbar-link-color-active: #000;
-$topbar-link-color-active-hover: #fff;
+$topbar-link-color-active-hover: #00ff00;
 $topbar-link-weight: bold;
-$topbar-link-font-size: rem-calc(24);
+$topbar-link-font-size: rem-calc(16);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-$topbar-link-bg-hover: #fff;
-// $topbar-link-bg-active: $primary-color;
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-bg-hover: #00ff00;
+$topbar-link-bg-active: #00ff00;
+$topbar-link-bg-active-hover: scale-color(#00ff00, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
 $topbar-link-font-family: 'Megrim', cursive;
 // $topbar-link-text-transform: none;

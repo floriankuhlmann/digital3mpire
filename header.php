@@ -49,7 +49,7 @@
 		</section>
 		<section class="middle tab-bar-section">
 			
-			<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
+			<h4 class="title"><?php bloginfo( 'name' ); ?></h4>
 
 		</section>
 	</nav>
@@ -63,13 +63,13 @@
 
 <header role="banner">
 	<div class="row">
-		<div class="small-10 medium-10 large-10 columns">
-			<div class="green font-effect-shadow-multiple font-effect-neon"><h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+		<!-- <div class="small-10 medium-10 large-10 columns">
+			<div class="green font-effect-shadow-multiple font-effect-neon"><h3><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h3>
 			</div>
-			<h4 class="subheader"><?php bloginfo('description'); ?></h4>
+			<h5 class="subheader"><?php bloginfo('description'); ?></h5>
 		</div>
 
-		<!-- <div class="large-12 medium-12 columns">
+		<div class="large-12 medium-12 columns">
 			<ul class="inline-list">
 				<li><a href="https://www.facebook.com/0floriankuhlmann1"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/fb_s.png"></a></li>
 				<li><a href="https://twitter.com/fkuhlmann"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/twitter_s.png"></a></li>

@@ -5,7 +5,7 @@
 
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
-				<h1 class="entry-title"><?php _e('File Not Found', 'FoundationPress'); ?></h1>
+				<h1 class="entry-title  font-effect-shadow-multiple font-effect-neon"><?php _e('File Not Found', 'FoundationPress'); ?></h1>
 			</header>
 			<div class="entry-content">
 				<div class="error">

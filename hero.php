@@ -14,7 +14,7 @@ get_header(); ?>
 		<?php while (have_posts()) : the_post(); ?>
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				<header>
-					<h2 class="entry-title"><?php the_title(); ?></h2>
+					<h2 class="entry-title font-effect-shadow-multiple font-effect-neon"><?php the_title(); ?></h2>
 				</header>
 				<?php do_action('foundationPress_page_before_entry_content'); ?>
 				<div class="entry-content">

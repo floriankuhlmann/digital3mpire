@@ -1,5 +1,5 @@
 body {
- background: url(../assets/img/bg/wave_bg_13_2.jpg) no-repeat left top fixed #000;
+ background: url(../assets/img/bg/wave_bg_17.jpg) no-repeat right top fixed #000;
 
 }
 
@@ -19,10 +19,9 @@ body {
 }
 
 .updated {
-	font-size: 1rem;
+	font-size: 1.25rem;
 	font-weight:400; 
-	color:#EE0FF6;
-	color:#fff;
+	border-bottom: 1px dotted #000;
 }
 
 header h1 a{
@@ -37,9 +36,15 @@ header h4 {
 
 	line-height: 1;
 	color:#fff;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
-.post header h2 a {
+.post header h2 a:hover {
 
-	color:#fff;
+	color:#000;
+}
+
+.entry-content img, .entry-content p {
+	padding-top: 1rem;
 }
