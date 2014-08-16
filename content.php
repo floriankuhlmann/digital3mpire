@@ -18,5 +18,5 @@
 	<footer>
 		<?php $tag = get_the_tags(); if (!$tag) { } else { ?><p><?php the_tags(); ?></p><?php } ?>
 	</footer>
-	<hr />
+	<!-- <hr />-->
 </article>

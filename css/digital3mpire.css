@@ -1,6 +1,5 @@
 body {
  background: url(../assets/img/bg/wave_bg_17.jpg) no-repeat right top fixed #000;
-
 }
 
 /*
@@ -32,6 +31,12 @@ header h4 {
 	/*font-family: 'Exo 2', sans-serif;*/
 }
 
+.post, .container .page {
+
+	border:5px solid #fff;
+	padding:1rem;
+}
+
 .post header h2 {
 
 	line-height: 1;
@@ -48,3 +53,5 @@ header h4 {
 .entry-content img, .entry-content p {
 	padding-top: 1rem;
 }
+
+.container {margin-bottom: 100px;} 
