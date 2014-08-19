@@ -45,6 +45,7 @@ background: url(../assets/img/bg/fff_30p.png);
 margin-bottom: 2rem;
 }
 
+
 .top-bar-container {
 
 		border-bottom:5px solid #fff;
@@ -72,6 +73,16 @@ box-shadow: 0px 0px 15px 15px rgba(255, 255, 255, .75);
 
 .entry-content img, .entry-content p {
 	padding-top: 1rem;
+}
+
+.entry-content a {
+	color:#000;
+	text-decoration:underline;
+}
+
+.entry-content a:hover {
+	color:#00ffee;
+	text-decoration:underline;
 }
 
 .container {margin-bottom: 100px;} 

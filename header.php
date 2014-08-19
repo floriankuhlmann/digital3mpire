@@ -23,8 +23,8 @@
 
 
 		<link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,800,800italic,900,900italic,700italic&effect=shadow-multiple|3d-float|neon' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Cousine:400,400italic,700,700italic' rel='stylesheet' type='text/css'>	
+		<!-- <link href='http://fonts.googleapis.com/css?family=Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,800,800italic,900,900italic,700italic' rel='stylesheet' type='text/css'>-->
+	<link href='http://fonts.googleapis.com/css?family=Cousine:400,400italic,700,700italic&effect=shadow-multiple|3d-float|neon' rel='stylesheet' type='text/css'>	
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/app.css" />
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/digital3mpire.css" />
 		
