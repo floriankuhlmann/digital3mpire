@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row">
-	<div class="small-12  medium-10 large-8 columns" role="main">
+	<div class="small-12  medium-10 large-10 columns small-centered" role="main">
 
 	<?php do_action('foundationPress_before_content'); ?>
 
@@ -28,7 +28,7 @@
 				<p><?php the_tags(); ?></p>
 			</footer>
 			<?php do_action('foundationPress_post_before_comments'); ?>
-<div class="small-12 medium-8 large-8 columns">
+<div class="small-12 medium-10 large-10 columns">
 			<?php comments_template(); ?>
 		</div>
 			<?php do_action('foundationPress_post_after_comments'); ?>

@@ -39,7 +39,7 @@ $base-font-size: 18px;
 // Global
 
 // We use these to control various global styles
-$body-bg: #F8FF11;
+$body-bg: #000;
 $body-font-color: #000;
 // $body-font-family: 'Megrim', cursive;
 // $body-font-family: 'Times new roman', serif;
@@ -61,7 +61,6 @@ $body-font-weight: 200;
 
 // We use these as default colors throughout
 $primary-color: #ee0ff6;
-$primary-color: #02fb1f;
 $primary-color: #fff;
 
 $secondary-color: #ee0ff6;
@@ -142,10 +141,10 @@ $header-font-color: #000	;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
- $h1-font-size: rem-calc(84);
- $h2-font-size: rem-calc(72);
-// $h3-font-size: rem-calc(27);
-// $h4-font-size: rem-calc(23);
+ $h1-font-size: rem-calc(72);
+ $h2-font-size: rem-calc(56);
+// $h3-font-size: rem-calc(34);
+// $h4-font-size: rem-calc(24);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
 

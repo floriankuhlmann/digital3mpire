@@ -10,6 +10,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header>
 		<?php FoundationPress_entry_meta(); ?>
+		<div class="categorylist"><?php the_category(', '); ?></div>		
 		<h2 class="green font-effect-shadow-multiple font-effect-neon"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	</header>
 	<div class="entry-content">

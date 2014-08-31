@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row">
-	<div class="large-10 medium-10 small-12 columns" role="main">
+	<div class="large-10 medium-10 small-12 columns small-centered" role="main">
 
 	<?php if ( have_posts() ) : ?>
 
@@ -10,13 +10,10 @@
 			<?php get_template_part( 'content', get_post_format() ); ?>
 		<?php endwhile; ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-
+	<?php else : ?>
+		<?php get_template_part( 'content', 'none' ); ?>
 		<?php do_action('foundationPress_before_pagination'); ?>
-
 	<?php endif;?>
-
 
 
 	<?php if ( function_exists('FoundationPress_pagination') ) { FoundationPress_pagination(); } else if ( is_paged() ) { ?>

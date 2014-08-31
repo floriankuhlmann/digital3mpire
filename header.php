@@ -40,36 +40,35 @@
 	<?php do_action('foundationPress_after_body'); ?>
 	
 	<div class="off-canvas-wrap" data-offcanvas>
-	<div class="inner-wrap">
+		<div class="inner-wrap">
 	
-	<?php do_action('foundationPress_layout_start'); ?>
+		<?php do_action('foundationPress_layout_start'); ?>
 	
-	<nav class="tab-bar show-for-small-only">
-		<section class="left-small">
-			<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-		</section>
-		<section class="middle tab-bar-section">
+		<nav class="tab-bar show-for-small-only">
+			<section class="left-small">
+				<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+			</section>
+			<section class="middle tab-bar-section">
 			
-			<h4 class="title"><?php bloginfo( 'name' ); ?></h4>
+				<h4 class="title"><?php bloginfo( 'name' ); ?></h4>
 
-		</section>
-	</nav>
+			</section>
+		</nav>
 
-	<?php get_template_part('parts/off-canvas-menu'); ?>
-
-	<?php get_template_part('parts/top-bar'); ?>
+		<?php get_template_part('parts/off-canvas-menu'); ?>
+		<?php get_template_part('parts/top-bar'); ?>
 
 <section class="container" role="document">
 	<?php do_action('foundationPress_after_header'); ?>
 
 <header role="banner">
 	<div class="row">
-		<!-- <div class="small-10 medium-10 large-10 columns">
-			<div class="green font-effect-shadow-multiple font-effect-neon"><h3><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h3>
-			</div>
-			<h5 class="subheader"><?php bloginfo('description'); ?></h5>
+		<div class="small-4 columns small-centered d3logo show-for-medium-up">
+			<img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/d3_logo_green.png">
+			<!-- <h3><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h3>
+			<h5 class="subheader"><?php bloginfo('description'); ?></h5>-->
 		</div>
-
+		<!-- 
 		<div class="large-12 medium-12 columns">
 			<ul class="inline-list">
 				<li><a href="https://www.facebook.com/0floriankuhlmann1"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/fb_s.png"></a></li>
