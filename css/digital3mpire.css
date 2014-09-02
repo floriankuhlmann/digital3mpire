@@ -78,8 +78,8 @@ header h4 {
 }
 
 .tab-bar, .top-bar-container {
-	border-bottom:2px solid #00FF00;
-	border-top:2px solid #00FF00;
+	/* border-bottom:1px solid #00FF00;*/
+	border-top:3px solid #00FF00;
 	/*	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;*/
