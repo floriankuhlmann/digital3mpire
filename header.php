@@ -63,8 +63,8 @@
 
 <header role="banner">
 	<div class="row">
-		<div class="small-4 columns small-centered d3logo show-for-medium-up">
-			<img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/d3_logo_green.png">
+		<div class="small-12 large-6 columns small-centered d3logo show-for-medium-up">
+			<img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/d3_logo_green_collage_4.png">
 			<!-- <h3><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h3>
 			<h5 class="subheader"><?php bloginfo('description'); ?></h5>-->
 		</div>
