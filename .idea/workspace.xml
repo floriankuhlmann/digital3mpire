@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="24dafc28-1766-41fc-99c3-6ac5bd347d85" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/digital3mpire/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.bowerrc" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/digital3mpire/.bowerrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/404.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/MIT-LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/archive.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/000_20p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/2new_aesthetics_business.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/Griechischer-Tempel5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/Griechischer-Tempel7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/Jerusalem_temple3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/Mountainl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/black-and-white-vortex-hole-3d-hd-wallpaper-fader.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/black-and-white-vortex-hole-3d-hd-wallpaper.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/chess-board-3d-widescreen-desktop-wallpaper1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/column_p1-prim.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/fff_20p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/fff_30p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/mystic-sun.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/outer_space_1600x1062_moon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/sculpture2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/sculpture21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/sculpture22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/sculpture23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/soldiers_outer_space_futuristic_suit_design_fight_cgi_blaze_battles_knives_alien_section_8_armored_s_Wallpaper_1366x768_www.wallpaperswa.com.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/temple1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/temple2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/temple2sw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/temple3sw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/temple3sw1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/temple3sw2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/temple3sw3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/temple3sw4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/temple3sw5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/temple3sw6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/triangle-in-the-mountains.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/triangle-in-the-mountains_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/triangle-in-the-mountains_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/triangle-in-the-mountains_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/tumblr_bomb_1280.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/vaishnava_seva_temple_3d_print_1__large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_13_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_13_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_8_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/bg/wave_bg_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/butterfly.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/explosion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/apple-touch-icon-114x114-precomposed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/apple-touch-icon-144x144-precomposed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/apple-touch-icon-144x144-precomposed.png.old.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/apple-touch-icon-72x72-precomposed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/apple-touch-icon-precomposed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/d3_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/d3_logo_green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/d3_logo_green_collage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/d3_logo_green_collage_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/d3_logo_green_collage_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/d3_logo_green_collage_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/d3_logo_green_collage_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/favicon_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/fb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/fb_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/google.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/google_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/rss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/rss_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/tumblr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/tumblr_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/icons/twitter_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/paint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/paint2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/assets/img/skull.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/fastclick/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/fastclick/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/fastclick/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/fastclick/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/fastclick/lib/fastclick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/css/foundation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/css/foundation.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/css/normalize.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.abide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.accordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.clearing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.equalizer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.interchange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.joyride.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.magellan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.offcanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.orbit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.reveal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/foundation/foundation.topbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/vendor/fastclick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/vendor/jquery.cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/vendor/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/vendor/modernizr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/js/vendor/placeholder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/_settings.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_accordion.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_alert-boxes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_block-grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_breadcrumbs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_button-groups.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_clearing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_flex-video.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_icon-bar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_inline-lists.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_joyride.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_keystrokes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_labels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_magellan.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_offcanvas.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_orbit.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_panels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_pricing-tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_progress-bars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_range-slider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_reveal-new.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_reveal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_side-nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_split-buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_sub-nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_switches.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_tabs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_thumbs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_toolbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_tooltips.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_top-bar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/foundation/components/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/foundation/scss/normalize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery-placeholder/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery-placeholder/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery-placeholder/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery-placeholder/LICENSE-MIT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery-placeholder/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery-placeholder/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery-placeholder/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery-placeholder/jquery.placeholder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery-placeholder/tests/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery-placeholder/tests/tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery.cookie/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery.cookie/jquery.cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/MIT-LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/dist/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/dist/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/ajax/jsonp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/ajax/load.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/ajax/parseJSON.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/ajax/parseXML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/ajax/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/ajax/var/nonce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/ajax/var/rquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/ajax/xhr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/attributes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/attributes/attr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/attributes/classes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/attributes/prop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/attributes/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/attributes/val.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/callbacks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/core/access.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/core/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/core/parseHTML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/core/ready.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/core/var/rsingleTag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/css/addGetHookIf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/css/curCSS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/css/defaultDisplay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/css/hiddenVisibleSelectors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/css/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/css/swap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/css/var/cssExpand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/css/var/getStyles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/css/var/isHidden.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/css/var/rmargin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/css/var/rnumnonpx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/data/Data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/data/accepts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/data/var/data_priv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/data/var/data_user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/deferred.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/deprecated.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/dimensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/effects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/effects/Tween.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/effects/animatedSelector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/event/alias.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/event/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/exports/amd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/exports/global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/intro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/manipulation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/manipulation/_evalUrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/manipulation/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/manipulation/var/rcheckableType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/offset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/outro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/queue/delay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/selector-native.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/selector-sizzle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/selector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/serialize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/sizzle/dist/sizzle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/sizzle/dist/sizzle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/sizzle/dist/sizzle.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/traversing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/traversing/findFilter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/traversing/var/rneedsContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/var/arr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/var/class2type.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/var/concat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/var/hasOwn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/var/indexOf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/var/pnum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/var/push.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/var/rnotwhite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/var/slice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/var/strundefined.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/var/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/var/toString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/jquery/src/wrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/lodash/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/lodash/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/lodash/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/lodash/dist/lodash.compat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/lodash/dist/lodash.compat.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/lodash/dist/lodash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/lodash/dist/lodash.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/lodash/dist/lodash.underscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/lodash/dist/lodash.underscore.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/a-download.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/audio-audiodata-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/audio-webaudio-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/battery-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/battery-level.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/blob-constructor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/canvas-todataurl-type.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/contenteditable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/contentsecuritypolicy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/contextmenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/cookies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/cors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-backgroundposition-shorthand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-backgroundposition-xy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-backgroundrepeat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-backgroundsizecover.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-boxsizing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-calc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-cubicbezierrange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-displayrunin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-displaytable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-filters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-hyphens.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-lastchild.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-mask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-mediaqueries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-objectfit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-overflow-scrolling.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-pointerevents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-positionsticky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-regions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-remunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-resize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-scrollbars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-shapes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-subpixelfont.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-supports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-userselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-vhunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-vmaxunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-vminunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/css-vwunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/custom-protocol-handler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/dart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/dataview-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/dom-classlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/dom-createElement-attrs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/dom-dataset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/dom-microdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/elem-datalist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/elem-details.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/elem-output.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/elem-progress-meter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/elem-ruby.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/elem-time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/elem-track.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/emoji.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/es5-strictmode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/event-deviceorientation-motion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/exif-orientation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/file-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/file-filesystem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/forms-fileinput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/forms-formattribute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/forms-inputnumber-l10n.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/forms-placeholder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/forms-speechinput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/forms-validation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/fullscreen-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/gamepad.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/getusermedia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/ie8compat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/iframe-sandbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/iframe-seamless.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/iframe-srcdoc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/img-apng.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/img-webp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/lists-reversed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/mathml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/network-connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/network-eventsource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/network-xhr2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/notification.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/performance.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/pointerlock-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/quota-management-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/requestanimationframe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/script-async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/script-defer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/style-scoped.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/svg-filters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/unicode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/url-data-uri.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/userdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/vibration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/web-intents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/webgl-extensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/websockets-binary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/window-framed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/workers-blobworkers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/workers-dataworkers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/feature-detects/workers-sharedworkers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/grunt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/media/Modernizr 2 Logo.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/media/Modernizr 2 Logo.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/media/Modernizr 2 Logo.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/media/Modernizr 2 Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/media/Modernizr 2 Logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/modernizr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/Windsong-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/Windsong-webfont.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/Windsong-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/Windsong-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/Windsong-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/alpha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/apng_test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/before-after.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/form_validation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/ga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/green5x5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/hashchange.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/mathml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/mathml_ref.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/modernizr-1.7.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/png_alpha_result.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/pushstate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/red30x30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/ruby.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/stroked-text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/svg-html-blur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/svg-img.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/svg-img.svg.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/svg_blur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/table.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/text-shadow1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/text-shadow2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/windsong_font.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/caniuse_files/xhtml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/js/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/js/dumpdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/js/lib/detect-global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/js/lib/jquery-1.7b2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/js/lib/jsonselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/js/lib/polyfills.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/js/lib/uaparser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/js/setup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/js/unit-caniuse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/js/unit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/qunit/qunit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/qunit/qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/modernizr/test/qunit/run-qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/dist/sizzle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/dist/sizzle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/dist/sizzle.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/tasks/commit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/tasks/compile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/tasks/dist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/tasks/release.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/tasks/tag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/tasks/version.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/test/data/empty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/test/data/mixed_sort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/test/data/testinit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/test/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/test/libs/qunit/qunit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/test/libs/qunit/qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/test/unit/extending.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/test/unit/selector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/bower_components/sizzle/test/unit/utilities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/comments.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/content-none.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/content.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/css/digital3mpire.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/hero.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/fastclick/lib/fastclick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/css/foundation.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/css/normalize.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.abide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.accordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.clearing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.equalizer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.interchange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.joyride.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.magellan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.offcanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.orbit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.reveal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/foundation/foundation.topbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/vendor/fastclick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/vendor/jquery.cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/vendor/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/vendor/modernizr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/foundation/js/vendor/placeholder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/init-foundation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery-placeholder/jquery.placeholder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery-placeholder/jquery.placeholder.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery-placeholder/tests/tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery.cookie/jquery.cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/dist/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/dist/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/ajax/jsonp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/ajax/load.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/ajax/parseJSON.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/ajax/parseXML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/ajax/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/ajax/var/nonce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/ajax/var/rquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/ajax/xhr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/attributes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/attributes/attr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/attributes/classes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/attributes/prop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/attributes/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/attributes/val.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/callbacks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/core/access.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/core/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/core/parseHTML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/core/ready.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/core/var/rsingleTag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/css/addGetHookIf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/css/curCSS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/css/defaultDisplay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/css/hiddenVisibleSelectors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/css/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/css/swap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/css/var/cssExpand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/css/var/getStyles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/css/var/isHidden.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/css/var/rmargin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/css/var/rnumnonpx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/data/Data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/data/accepts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/data/var/data_priv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/data/var/data_user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/deferred.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/deprecated.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/dimensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/effects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/effects/Tween.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/effects/animatedSelector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/event/alias.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/event/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/exports/amd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/exports/global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/intro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/manipulation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/manipulation/_evalUrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/manipulation/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/manipulation/var/rcheckableType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/offset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/outro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/queue/delay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/selector-native.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/selector-sizzle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/selector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/serialize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/sizzle/dist/sizzle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/sizzle/dist/sizzle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/sizzle/dist/sizzle.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/traversing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/traversing/findFilter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/traversing/var/rneedsContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/var/arr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/var/class2type.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/var/concat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/var/hasOwn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/var/indexOf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/var/pnum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/var/push.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/var/rnotwhite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/var/slice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/var/strundefined.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/var/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/var/toString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/var/trim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/jquery/src/wrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/kitchen-sink.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/lodash/dist/lodash.compat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/lodash/dist/lodash.compat.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/lodash/dist/lodash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/lodash/dist/lodash.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/lodash/dist/lodash.underscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/lodash/dist/lodash.underscore.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/a-download.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/audio-audiodata-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/audio-webaudio-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/battery-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/battery-level.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/blob-constructor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/canvas-todataurl-type.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/contenteditable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/contentsecuritypolicy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/contextmenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/cookies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/cors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-backgroundposition-shorthand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-backgroundposition-xy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-backgroundrepeat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-backgroundsizecover.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-boxsizing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-calc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-cubicbezierrange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-displayrunin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-displaytable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-filters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-hyphens.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-lastchild.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-mask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-mediaqueries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-objectfit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-overflow-scrolling.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-pointerevents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-positionsticky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-regions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-remunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-resize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-scrollbars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-shapes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-subpixelfont.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-supports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-userselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-vhunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-vmaxunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-vminunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/css-vwunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/custom-protocol-handler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/dart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/dataview-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/dom-classlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/dom-createElement-attrs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/dom-dataset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/dom-microdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/elem-datalist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/elem-details.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/elem-output.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/elem-progress-meter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/elem-ruby.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/elem-time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/elem-track.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/emoji.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/es5-strictmode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/event-deviceorientation-motion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/exif-orientation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/file-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/file-filesystem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/forms-fileinput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/forms-formattribute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/forms-inputnumber-l10n.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/forms-placeholder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/forms-speechinput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/forms-validation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/fullscreen-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/gamepad.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/getusermedia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/ie8compat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/iframe-sandbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/iframe-seamless.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/iframe-srcdoc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/img-apng.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/img-webp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/lists-reversed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/mathml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/network-connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/network-eventsource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/network-xhr2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/notification.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/performance.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/pointerlock-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/quota-management-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/requestanimationframe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/script-async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/script-defer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/style-scoped.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/svg-filters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/unicode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/url-data-uri.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/userdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/vibration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/web-intents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/webgl-extensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/websockets-binary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/window-framed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/workers-blobworkers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/workers-dataworkers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/feature-detects/workers-sharedworkers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/grunt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/modernizr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/modernizr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/test/caniuse_files/ga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/test/caniuse_files/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/test/caniuse_files/modernizr-1.7.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/test/js/dumpdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/test/js/lib/detect-global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/test/js/lib/jquery-1.7b2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/test/js/lib/jsonselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/test/js/lib/polyfills.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/test/js/lib/uaparser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/test/js/setup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/test/js/unit-caniuse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/test/js/unit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/test/qunit/qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/modernizr/test/qunit/run-qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/dist/sizzle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/dist/sizzle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/dist/sizzle.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/tasks/commit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/tasks/compile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/tasks/dist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/tasks/release.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/tasks/tag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/tasks/version.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/test/data/empty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/test/data/testinit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/test/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/test/libs/qunit/qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/test/unit/extending.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/test/unit/selector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/js/sizzle/test/unit/utilities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/kitchen-sink.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/languages/fr_FR.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/languages/fr_FR.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/library/cleanup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/library/enqueue-scripts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/library/entry-meta.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/library/foundation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/library/menu-walker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/library/navigation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/library/theme-support.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/library/widget-areas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/page-full.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/parts/off-canvas-menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/parts/top-bar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/scss/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/scss/config/_colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/scss/config/_settings.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/scss/config/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/scss/site/_structure.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/searchform.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/sidebar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/single.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/style.css" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/digital3mpire/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/digital3mpire/parts/top-bar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/digital3mpire/css/digital3mpire.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="761">
+              <caret line="175" selection-start-line="175" selection-end-line="175" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/digital3mpire/css/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#48979#49302#2" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>http:</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>https:</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/digital3mpire/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/digital3mpire/parts/top-bar.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/digital3mpire/css/digital3mpire.css" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/digital3mpire.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="990" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="digital3mpire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital3mpire" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digital3mpire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital3mpire" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes" />
+      <recent name="$PROJECT_DIR$/wp-content/digital3mpire" />
+      <recent name="$PROJECT_DIR$/wp-content" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24dafc28-1766-41fc-99c3-6ac5bd347d85" name="Default Changelist" comment="" />
+      <created>1617739797752</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617739797752</updated>
+      <workItem from="1617739798812" duration="3584000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3584000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="990" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Grunt " side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/digital3mpire/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="58" column="69" selection-start-line="58" selection-start-column="69" selection-end-line="58" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/digital3mpire/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/digital3mpire/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/digital3mpire/parts/top-bar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/digital3mpire/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#48979#49302#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/digital3mpire/css/digital3mpire.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="175" selection-start-line="175" selection-end-line="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
