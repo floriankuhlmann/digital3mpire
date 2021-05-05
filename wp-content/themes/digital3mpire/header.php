@@ -21,69 +21,68 @@
 			echo wp_title( ' | ', 'false', 'right' ); bloginfo( 'name' );
 		} ?></title>
 
-
+        <script src="https://kit.fontawesome.com/d2dcff0c12.js" crossorigin="anonymous"></script>
 		<link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
 		<!-- <link href='https://fonts.googleapis.com/css?family=Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,800,800italic,900,900italic,700italic' rel='stylesheet' type='text/css'>-->
 	<link href='https://fonts.googleapis.com/css?family=Cousine:400,400italic,700,700italic&effect=shadow-multiple|3d-float|neon' rel='stylesheet' type='text/css'>	
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/app.css" />
-		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/digital3mpire.css" />
-		
-		<link rel="icon" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/favicon_2.png" type="image/png">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/menu-style.css"> <!-- Resource style -->
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/digital3mpire.css" />
+
+
+        <script src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/js/menu/modernizr.js"></script> <!-- Modernizr -->
+
+
+        <link rel="icon" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/favicon_2.png" type="image/png">
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-144x144-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-114x114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-precomposed.png">
 		
-		<?php wp_head(); ?>
+		<?php //wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
 	<?php do_action('foundationPress_after_body'); ?>
-
-    <div class="off-canvas-wrap" data-offcanvas>
+    <div class="toppaint">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/paint2.png">
+    </div>
+    <div>
         <div class="inner-wrap">
 
-            <?php do_action('foundationPress_layout_start'); ?>
 
-            <nav class="tab-bar show-for-small-only">
-                <!-- <nav class="tab-bar">-->
-                <section class="left-small">
-                    <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-                </section>
-                <section class="middle tab-bar-section">
-
-                    <h4 class="title"><?php bloginfo( 'name' ); ?></h4>
-
-                </section>
+            <nav>
+                <ul class="cd-primary-nav">
+                    <?php foundationPress_mobile_off_canvas(); ?>
+                </ul>
             </nav>
-
-            <?php get_template_part('parts/off-canvas-menu'); ?>
-            <?php get_template_part('parts/top-bar'); ?>
-            <section class="container" role="document">
-                <?php do_action('foundationPress_after_header'); ?>
-
-                <header role="banner">
-                    <div class="row">
-                        <div class="small-12 large-6 columns small-centered d3logo show-for-medium-up">
-                            <!-- <img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/d3_logo_green_collage_5.png">
-                         <h3><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h3>
-                        <h5 class="subheader"><?php bloginfo('description'); ?></h5>-->
-                            <br><br>
-                        </div>
-                        <!--
-                <div class="large-12 medium-12 columns">
-                        <ul class="inline-list">
-                                <li><a href="https://www.facebook.com/0floriankuhlmann1"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/fb_s.png"></a></li>
-                                <li><a href="https://twitter.com/fkuhlmann"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/twitter_s.png"></a></li>
-                                <li><a href="http://lsdsl.tumblr.com/"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/tumblr_s.png"></a></li>
-                                <li><a href=""><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/rss_s.png"></a></li>
-                                <li><a href="https://twitter.com/fkuhlmann"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/google_s.png"></a></li>
-                        </ul>
-                </div>
-
-                <div class="floatingyeti show-for-medium-up">
-                        <br><br><br>
-                         <img alt="digital3empire" src="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/paint2.png">
-                </div>-->
+            <?php do_action('foundationPress_layout_start'); ?>
+            <div class="top-bar-container">
+                <div class="row">
+                    <!--<div class="large-10 medium-10 small-12 columns small-centered">-->
+                    <div class="large-2 small-12 columns">
+                            <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+                            <div class="cd-overlay-content">
+                                <span></span>
+                            </div> <!-- cd-overlay-content -->
                     </div>
+                    <div class="large-10 small-12 columns">
+                        <h3 class="text-right">
+                            <a href="<?php echo get_home_url(); ?>">DIGITAL3MPIRE</a> &nbsp;&nbsp;
+                            <a href="https://instagram.com/digital.3mpire"><i class="fab fa-instagram"></i></a>
+                            <a href="https://facebook.com/digital3mpire"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/digital_3mpire"><i class="fab fa-twitter"></i></a>
+                        </h3>
+                    </div>
+                    <div class="large-4 columns">
+                        <div class="cd-overlay-nav">
+                            <span></span>
+                        </div> <!-- cd-overlay-nav -->
+                    </div>
+                </div>
+            </div>
 
-</header>
+
+
+
+
+

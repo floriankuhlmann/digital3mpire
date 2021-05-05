@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row">
-	<div class="small-12  medium-10 large-10 columns small-centered" role="main">
+	<div class="small-12 medium-10 columns small-centered" role="main">
 
 	<?php do_action('foundationPress_before_content'); ?>
 

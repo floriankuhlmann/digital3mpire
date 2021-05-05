@@ -28,3 +28,10 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
   http://foundation.zurb.com/docs/sass.html
 
 ---------------------------------------------------------------------------- */
+
+.toppaint {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 100    ;
+}

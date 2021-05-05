@@ -4,6 +4,13 @@ Author: Ole Fredrik Lie
 URL: http://olefredrik.com
 */
 
+function my_home_category( $query ) {
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'cat', '1');
+    }
+}
+add_action( 'pre_get_posts', 'my_home_category' );
+
 
 // Various clean up functions
 require_once('library/cleanup.php');

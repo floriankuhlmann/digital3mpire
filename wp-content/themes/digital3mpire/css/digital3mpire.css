@@ -1,16 +1,75 @@
 body {
+	font-size: 14px;
  background: url(../assets/img/bg/black-and-white-vortex-hole-3d-hd-wallpaper-fader.jpg) repeat right top fixed #000;
 }
 
-/*
-#homepage-hero {
-	background:url("../assets/img/bg/triangle-in-the-mountains_2.jpg") repeat scroll top center rgba(26, 7, 104, 1);
+.toppaint {
+	position: absolute;
+	top: 0;
+	left: 0;
+
 }
 
-#homepage-hero .floatingyeti img {
-    max-width: 100%;
+.index-headline {
+	margin-bottom: 1.5rem;
 }
-*/
+
+.menubox {
+	padding: 1rem;
+	margin-bottom:1rem;
+	background-image: linear-gradient(#ff00ff91, #000);
+	-webkit-box-shadow: 0px 0px 10px 5px rgba(0, 255, 0, .75);
+	-moz-box-shadow: 0px 0px 10px 5px rgba(0, 255, 0, .75);
+	box-shadow: 0px 0px 10px 5px rgba(0, 255, 0, .75);
+}
+
+a:hover .menubox {
+	background-image: linear-gradient(#ff00ff91, #fff);
+	-webkit-box-shadow: 0px 0px 20px 5px rgba(255, 255, 190, .75);
+	-moz-box-shadow: 0px 0px 20px 5px rgba(255, 255, 190, .75);
+	box-shadow: 0px 0px 20px 5px rgba(255, 255, 190, .75);
+}
+
+.menubox-bg-shows {
+	background-image: url("../assets/img/iconset/circle-world-global-internet-earth-outline-stroke.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: lighten;
+}
+
+.menubox h2, .menubox h2 a {
+	font-size: 2rem;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #f7f,0 0 0.6em #f0f, 0 0 0.8em #f0f, 0 0 1.0em #f0f, 0 0 1.2em #f0f;
+}
+
+.menubox h2 img {
+	width: 2rem;
+	height: auto;
+	margin: auto 0;
+}
+
+.menubox p {
+	font-size: 1rem;
+}
+
+.cd-primary-nav ul.off-canvas-list li a {
+	display: block;
+	padding: 0rem;
+	border-bottom: 0px;
+	line-height: 1.5rem;
+	font-family: 'Megrim',cursive;
+	font-weight: 600;
+	font-style: normal;
+	text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #f7f,0 0 0.6em #f0f, 0 0 0.8em #f0f, 0 0 1.0em #f0f, 0 0 1.2em #f0f;
+}
+
+.cd-primary-nav ul.off-canvas-list li a:hover {
+	text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #1dff46,0 0 0.6em #0ef90e, 0 0 0.8em #0ef90e, 0 0 1.0em #0ef90e, 0 0 1.2em #0ef90e;
+}
+
+
 #homepage-hero h1 a, #homepage-hero h4 {
 
     padding-bottom:10px;
@@ -96,6 +155,15 @@ header h4 {
 	box-shadow: 0px 0px 25px 5px rgba(0, 255, 0, .75);
 	background-color: #000;
 	width:100%;
+	height:80px;
+}
+
+.top-bar-container .columns {
+	height: 80px;
+}
+
+.top-bar-container .columns h3 {
+	line-height: 80px;
 }
 
 .tab-bar {

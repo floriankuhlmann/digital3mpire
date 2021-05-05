@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="row">
 <!-- Row for main content area -->
-	<div class="small-12 large-10 columns small-centered" role="main">
+	<div class="small-12 medium-10 columns small-centered" role="main">
 
 	<?php if ( have_posts() ) : ?>
 
