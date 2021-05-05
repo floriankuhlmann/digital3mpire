@@ -1,6 +1,9 @@
 body {
 	font-size: 14px;
- background: url(../assets/img/bg/black-and-white-vortex-hole-3d-hd-wallpaper-fader.jpg) repeat right top fixed #000;
+	background: url(../assets/img/bg/black-and-white-vortex-hole-3d-hd-wallpaper-fader.jpg);
+	/*background-size: cover;*/
+	background-position: top;
+	background-attachment: fixed;
 }
 
 .toppaint {
@@ -10,8 +13,17 @@ body {
 
 }
 
+.text-bg-light p {
+	padding: 1rem;
+	background-color: rgba(0, 0, 0, .5)
+}
+
 .index-headline {
 	margin-bottom: 1.5rem;
+}
+
+.inner-wrap p a {
+	text-decoration: underline;
 }
 
 .menubox {

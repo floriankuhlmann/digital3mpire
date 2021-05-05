@@ -31,7 +31,7 @@
         </a>
     </div>
     <div class="small-12 medium-3 columns" role="main">
-        <a href="<?php echo home_url() ?>/nft-label/">
+        <a href="<?php echo home_url() ?>/category/nft-label/">
             <div class="menubox">
                 <h2 class="green font-effect-shadow-multiple font-effect-neon">
                     <i class="fas fa-comments-dollar"></i> NFT label

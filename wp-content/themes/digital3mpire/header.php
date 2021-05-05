@@ -59,13 +59,13 @@
             <div class="top-bar-container">
                 <div class="row">
                     <!--<div class="large-10 medium-10 small-12 columns small-centered">-->
-                    <div class="large-2 small-12 columns">
+                    <div class="large-8 small-2 columns">
                             <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
                             <div class="cd-overlay-content">
                                 <span></span>
                             </div> <!-- cd-overlay-content -->
                     </div>
-                    <div class="large-10 small-12 columns">
+                    <div class="large-4 small-10 columns">
                         <h3 class="text-right">
                             <a href="<?php echo get_home_url(); ?>">DIGITAL3MPIRE</a> &nbsp;&nbsp;
                             <a href="https://instagram.com/digital.3mpire"><i class="fab fa-instagram"></i></a>
@@ -73,14 +73,12 @@
                             <a href="https://twitter.com/digital_3mpire"><i class="fab fa-twitter"></i></a>
                         </h3>
                     </div>
-                    <div class="large-4 columns">
-                        <div class="cd-overlay-nav">
-                            <span></span>
-                        </div> <!-- cd-overlay-nav -->
-                    </div>
+
                 </div>
             </div>
-
+            <div class="cd-overlay-nav">
+                <span></span>
+            </div> <!-- cd-overlay-nav -->
 
 
 
