@@ -10,7 +10,8 @@
         and so in addition to the gallery and the cooperation projects, the NFT label digital3mpire was added.</p>
         <h3>Create with us</h3>
         <p>we are creating and minting netbased aesthetic entities and artworks in cooperation with progressive creators who have a strong digital mindset.<br>
-        <br>we currently mint the releases on the <a href="https://opensea.io/accounts/digital3mpire">opensea plattform</a> and publish infos here and on social.</p>
+        <br>we currently mint the releases on the <a href="https://opensea.io/accounts/digital3mpire">opensea</a> or the <a href="https://www.hicetnunc.xyz/tz/tz1LnELzbJ4mSoyNuxBSnkGZ6jmvjtck8ohp">
+                hhicetnunc.xyz</a> plattform and publish infos here and on our social channels.</p>
 </span>
     </div>
 </div>
