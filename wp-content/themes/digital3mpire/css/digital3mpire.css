@@ -262,6 +262,7 @@ header h4 {
 	}
 
 	.container .page header h2,
+	.post header h1.entry-title,
 	.post header h2 {
 		margin-left: -2rem;
 	}
