@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
+.wp-list-table .type-blormpost {
+    display: none;
+}
+
+
+/* the widgets */
+
+#BlormDashboardWidgetNewPost,
+#BlormDashboardWidgetSearchUser,
+#BlormDashboardWidgetFollowing,
+#BlormDashboardWidgetFollowers,
+#BlormDashboardWidgetFeed,
+#BlormDashboardWidgetUserProfile {
+    background-color: #ffff94;
+}
+
+
+/* user profile */
+.BlormUserProfile .BlormUserProfileBox {
+    padding:0.5rem 0.5rem 0.5rem 0.5rem;
+    border:1px solid #eee;
+    background-color: rgb(252, 252, 252);
+}
+
+.BlormUserProfile .BlormUserProfileNameBox,
+.BlormUserProfile .BlormUserProfileImageBox {
+    width:25%;
+    float:left;
+}
+
+.BlormUserProfile .BlormUserProfileInfoBox {
+    width:25%;
+    float:left;
+    text-align: left;
+}
+
+.BlormUserProfile .BlormUserProfileEdit {
+    width:25%;
+    float:left;
+    text-align: left;
+}
+
+.BlormUserProfileUserImage {
+    width: 5rem;
+    margin: 1px 5px 1px 1px;
+    padding: 5px 5px 0px 5px;
+    float: left;
+    word-wrap: break-word;
+    word-break: break-all;
+    background-color: #f6f6f6;
+    color:#555;
+    overflow:hidden;
+    border-bottom: #f6f6f6 5px solid;
+}
+
+.BlormUserProfileUserImage img {
+    width: 100%;
+    height: auto;
+    background-color: #f6f6f6;
+    color:#555;
+    overflow:hidden;
+}
+
+
+/* new post */
+
+.BlormWidgetFormNewPost select {
+    width:100%;
+}
+
+.BlormWidgetFormNewPost .helper-text {
+    color:red;
+}
+
+.BlormWidgetFormNewPost .file-field .btn-small {
+    overflow:hidden;
+}
+
+.BlormWidgetFormNewPost label {
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+/* user search */
+.BlormUserSearch .helper-text.followuser {
+    color:red;
+    padding-top: 0.25rem;
+    margin-bottom:  0.25rem;
+    float: left;
+}
+
+
+/* follower widgets */
+
+
+
+
+
+/* blorm feed */
+.blormIcon {
+    height: 1rem;
+    width: auto;
+    margin-bottom: -0.25rem;
+
+}
+
+.blormImage {
+    height: 1rem;
+    width: auto;
+    margin-bottom: -0.2rem;
+    margin-right: 0.25rem;
+}
+
+
+.BlormFeedHeader {
+    margin-bottom: 1rem;
+    padding:0.5rem 0.5rem 0.5rem 0.5rem;
+    border:1px solid #eee;
+    background-color: rgb(252, 252, 252);
+    text-align: right;
+}
+
+.BlormFeedPost {
+    margin-bottom: 3rem;
+    padding:0.5rem 0.5rem 1rem 0.5rem;
+    border:1px solid #eee;
+    background-color: rgb(252, 252, 252);
+}
+
+.BlormFeedPost.sharedpost {
+    background-color: darkgrey;
+}
+
+.BlormFeedPost .blorm-feed-post-headline {
+    width:75%;
+    display: inline-block;
+}
+
+.BlormFeedPost .blorm-feed-post-headline span.BlormFeedHeadlineUser {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.BlormFeedImage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.BlormFeedURL {
+    text-align: right;
+}
+
+.BlormFeedEdit--Date,
+.BlormFeedEdit--Mod {
+    /*display: inline-block;
+    border-bottom: 1px solid #000;*/
+}
+
+.BlormFeedEdit--Mod {
+    float: right;
+}
+
+.BlormFeedEdit--Mod button {
+    margin-top: 1.75rem;
+}
+
+.BlormFeedPostcomment_Content {
+    padding: 0.25rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+    width:90%;
+}
+.BlormFeedPostcomment_Content_Text{
+    display: block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: rgb(246, 246, 246);
+    font-style: italic;
+}
+.BlormFeedPostcomment_Content_Date{
+    display: block;
+}
+.BlormFeedPostcomment_User {
+    display: inline-block;
+    width:5%;
+    padding: 0.25rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    float: left;
+}
+
+.BlormFeedPostcomment_Date {
+    display: block;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.BlormFeedAction--comment-textbox {
+    /*padding: 0.25rem;*/
+    margin-top: 0.5rem;
+}
+
+.BlormFeedAction--comment-textbox {
+    width:98%;
+    min-height:2rem;
+    border:1px solid #ccc;
+    color: #999;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.BlormFeedAction button {
+    color:rgb(0, 133, 186);
+}
+
+
+
+
+/* feedback layer */
+
+.BlormFeedbackBox {
+    position: fixed;
+    width: 20%;
+    min-height: 5%;
+    border: 1px solid #0073aa;
+    background-color: white;
+    left: 40%;
+    top: 40%;
+    z-index: 9999999;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
+    cursor:pointer;
+    text-align: center;
+}
+
+
+/* general styles */
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.hndle.ui-sortable-handle {
+    background-color: #23282d;
+    color:#fff;
+}
+
+/*.BlormFollowerListUsers .card {
+    padding: 0;
+}*/

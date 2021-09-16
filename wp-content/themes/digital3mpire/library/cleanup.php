@@ -79,7 +79,7 @@ function cleanup_head() {
     add_filter( 'script_loader_src', 'remove_wp_ver_css_js', 9999 );
 
     // Prevent unneccecary info from being displayed
-    add_filter('login_errors',create_function('$a', "return null;"));
+   // add_filter('login_errors',create_function('$a', "return null;"));
 
 } 
 
