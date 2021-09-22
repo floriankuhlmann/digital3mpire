@@ -43,9 +43,12 @@ function blorm_cron_getstream_user_exec() {
         'body' => '',
         'data_format' => 'body',
     );
+
+    add_filter('https_ssl_verify', '__return_false');
+    add_filter('https_local_ssl_verify', '__return_false');
+
     // @return array|WP_Error Array containing 'headers', 'body', 'response', 'cookies', 'filename'.
     $ApiResponse = wp_remote_request(CONFIG_BLORM_APIURL ."/account/data", $args);
-
     if (is_a($ApiResponse,"WP_ERROR")) {
 
         if (isset($ApiResponse->errors['http_request_failed'])) {

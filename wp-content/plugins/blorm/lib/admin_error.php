@@ -20,10 +20,12 @@ function prepare_dashboard_meta() {
 }
 
 function dashboard_widget_blorm_init_error() {
+    global $blormUserAccountData;
     ?>
     <div id="Blorm_usermodule" class="BlormUserModule">
         <p>The BLORM Plugin is activated but there was an error initiating the plugin and connecting to the BLORM API.</p>
         <p>Did you register an API-key and saved it under 'Settings/Blorm Settings' of this plugin?</p>
+        <p><b>ERROR: <?php echo $blormUserAccountData->error; ?></b>
     </div>
     <?php
 }
