@@ -40,6 +40,9 @@ function rest_blorm_api_endpoint() {
 
 function rest_blormapi_handler(WP_REST_Request $request) {
 
+    add_filter('https_ssl_verify', '__return_false');
+    add_filter('https_local_ssl_verify', '__return_false');
+
     if ( !is_user_logged_in() ) {
         return new WP_REST_Response(array("message" =>"user not logged in"),200 ,array('Content-Type' => 'application/json'));
     }
