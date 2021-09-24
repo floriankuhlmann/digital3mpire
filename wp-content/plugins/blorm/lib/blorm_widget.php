@@ -61,11 +61,18 @@ class DisplayWidget extends \WP_Widget
             <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
         </p>
         <?php
-        $cssClass = ! empty( $instance['cssClass'] ) ? $instance['cssClass'] : esc_html__( '', 'text_domain' );
+        $cssClassWidget = ! empty( $instance['cssClassWidget'] ) ? $instance['cssClassWidget'] : esc_html__( '', 'text_domain' );
         ?>
         <p>
-            <label for="<?php echo esc_attr( $this->get_field_id( 'cssClass' ) ); ?>"><?php esc_attr_e( 'Css-class name:', 'text_domain' ); ?></label>
-            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'cssClass' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'cssClass' ) ); ?>" type="text" value="<?php echo esc_attr( $cssClass ); ?>">
+            <label for="<?php echo esc_attr( $this->get_field_id( 'cssClassWidget' ) ); ?>"><?php esc_attr_e( 'Css-class name widget:', 'text_domain' ); ?></label>
+            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'cssClassWidget' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'cssClassWidget' ) ); ?>" type="text" value="<?php echo esc_attr( $cssClassWidget ); ?>">
+        </p>
+        <?php
+        $cssClassPost = ! empty( $instance['cssClassPost'] ) ? $instance['cssClassPost'] : esc_html__( '', 'text_domain' );
+        ?>
+        <p>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'cssClassPost' ) ); ?>"><?php esc_attr_e( 'Css-class name single post:', 'text_domain' ); ?></label>
+            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'cssClassPost' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'cssClassPost' ) ); ?>" type="text" value="<?php echo esc_attr( $cssClassPost ); ?>">
         </p>
         <?php
         $numberOfPosts = ! empty( $instance['numberOfPosts'] ) ? $instance['numberOfPosts'] : esc_html__( 'Number of Posts to display', 'text_domain' );
@@ -73,6 +80,20 @@ class DisplayWidget extends \WP_Widget
         <p>
             <label for="<?php echo esc_attr( $this->get_field_id( 'numberOfPosts' ) ); ?>"><?php esc_attr_e( 'Show number of posts:', 'text_domain' ); ?></label>
             <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'numberOfPosts' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'numberOfPosts' ) ); ?>" type="number" value="<?php echo esc_attr( $numberOfPosts ); ?>">
+        </p>
+        <?php
+        $showImage = ! empty( $instance['showImage'] ) ? $instance['showImage'] : esc_html__( 'Show image of post', 'text_domain' );
+        ?>
+        <p>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'showImage' ) ); ?>"><?php esc_attr_e( 'Show image of posts:', 'text_domain' ); ?></label>
+            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'showImage' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'showImage' ) ); ?>" type="checkbox" value="<?php echo esc_attr( $showImage ); ?>">
+        </p>
+        <?php
+        $showExcert = ! empty( $instance['showExcert'] ) ? $instance['showExcert'] : esc_html__( 'Show excert of post', 'text_domain' );
+        ?>
+        <p>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'showExcert' ) ); ?>"><?php esc_attr_e( 'Show excert of posts:', 'text_domain' ); ?></label>
+            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'showExcert' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'showExcert' ) ); ?>" type="checkbox" value="<?php echo esc_attr( $showExcert ); ?>">
         </p>
         <?php
     }
@@ -91,7 +112,10 @@ class DisplayWidget extends \WP_Widget
         $instance = array();
         $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? sanitize_text_field( $new_instance['title'] ) : '';
         $instance['numberOfPosts'] = ( ! empty( $new_instance['numberOfPosts'] ) ) ? sanitize_text_field( $new_instance['numberOfPosts'] ) : '';
-        $instance['cssClass'] = ( ! empty( $new_instance['cssClass'] ) ) ? sanitize_text_field( $new_instance['cssClass'] ) : '';
+        $instance['cssClassWidget'] = ( ! empty( $new_instance['cssClassWidget'] ) ) ? sanitize_text_field( $new_instance['cssClassWidget'] ) : '';
+        $instance['cssClassPost'] = ( ! empty( $new_instance['cssClassPost'] ) ) ? sanitize_text_field( $new_instance['cssClassPost'] ) : '';
+        $instance['showImage'] = ( ! empty( $new_instance['showImage'] ) ) ? sanitize_text_field( $new_instance['showImage'] ) : '';
+        $instance['showExcert'] = ( ! empty( $new_instance['showExcert'] ) ) ? sanitize_text_field( $new_instance['showExcert'] ) : '';
 
         return $instance;
     }
@@ -101,7 +125,7 @@ class DisplayWidget extends \WP_Widget
 
         $blormposts = get_posts(array('post_type' => 'blormpost','numberposts' => $instance['numberOfPosts']));
 
-        echo "<div class='blormDisplayPostsWidget'>";
+        echo "<div class='blormDisplayPostsWidget ".$instance['cssClassWidget']."'>";
         foreach ($blormposts as $blormpost) {
 
             $a = get_post_meta($blormpost->ID);
@@ -113,10 +137,21 @@ class DisplayWidget extends \WP_Widget
             }
 
             //echo $blormpost->post_content;
-            echo "<div class='blorm-display-posts-widget-element ".$instance['cssClass']."' data-postid='".$blormpost->ID."' data-activityid='".$acivityId."'>";
-            echo "<div class='blorm-display-posts-widget-element-title'><a href='#'>".get_the_title($blormpost)."</a></div>";
-            echo "<div class='blorm-display-posts-widget-element-image'><a href='#'>".get_the_post_thumbnail($blormpost)."</a></div>";
-            echo "<div class='blorm-display-posts-widget-element-excert'><a href='#'>".get_the_excerpt($blormpost)."</a></div>";
+            echo "<div class='blorm-display-posts-widget-element ".$instance['cssClassPost']."' data-postid='".$blormpost->ID."' data-activityid='".$acivityId."'>";
+            echo "<div class='blorm-display-posts-widget-element-title'><span class=\"material-icons\">content_copy</span>&nbsp;<a href='#'>".get_the_title($blormpost)."</a></div>";
+
+            if (isset($instance['showImage'])) {
+                if ($instance['showImage'] ) {
+                    echo "<div class='blorm-display-posts-widget-element-image'><a href='#'>".get_the_post_thumbnail($blormpost)."</a></div>";
+                }
+            }
+
+            if (isset($instance['showExcert'])) {
+                if ($instance['showExcert']) {
+                    echo "<div class='blorm-display-posts-widget-element-excert'><a href='#'>" . get_the_excerpt($blormpost) . "</a></div>";
+                }
+            }
+
             echo "</div>";
         }
         echo "</div>";
