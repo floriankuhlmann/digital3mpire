@@ -3,3 +3,4 @@ wp-config.php
 wp-content/uploads
 wp-content/debug.log
 .idea
+config_blorm_dev.php

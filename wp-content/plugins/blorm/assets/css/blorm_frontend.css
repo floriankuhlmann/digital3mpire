@@ -31,8 +31,8 @@
 }
 
 
-.type-blormpost {
-
+.type-blormpost .material-icons{
+    padding-right: 0.5rem;
 }
 
 /*.blorm-post-content-container {

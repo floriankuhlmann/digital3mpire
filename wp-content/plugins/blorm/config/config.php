@@ -21,8 +21,9 @@ function get_blorm_config() {
         'update_intervall' => '180',
     );
 
-    if ( file_exists ( plugin_dir_path( __FILE__ ) . '/config_dev.php' )) {
-    	$api_options = include plugin_dir_path( __FILE__ ) . '/config_dev.php';
+    $configDevFile = ABSPATH . 'config_blorm_dev.php';
+    if ( file_exists ( $configDevFile )) {
+    	$api_options = include( $configDevFile );
     }
 
 	$returnArray = array_merge(

@@ -40,6 +40,10 @@ function blorm_cron_getstream_exec() {
         'timeout' => 5,
         'sslverify' => true,
     );
+
+    add_filter('https_ssl_verify', '__return_false');
+    add_filter('https_local_ssl_verify', '__return_false');
+
     $response = wp_remote_request(CONFIG_BLORM_APIURL ."/feed/userpublic", $args);
 
     if( is_wp_error( $response ) ) {

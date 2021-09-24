@@ -46,6 +46,8 @@ function enqueue_blorm_frontend_js() {
 add_action( 'wp_head', 'add_getstream_data_to_head');
 function add_getstream_data_to_head() {
 
+    echo "<!-- begin rendering blorm data reblogs and shares -->\n";
+
     // POSTS ARE CREATED ON THIS PLATFORM AND SHARED ON BLORM
     // we need the information about created post on frontend rendering the posts and will collect them here
     $aBlormCreatePosts = array();
@@ -71,6 +73,9 @@ function add_getstream_data_to_head() {
     // get all posts from this plattformed that are shared on blorm
     $aRecentPostsRebloged = wp_get_recent_posts(array('meta_key' => 'blorm_reblog_activity_id','post_type' => 'blormpost'));
 
+    echo "<!-- getstream_data_to_head";
+    var_dump($aRecentPostsRebloged);
+    echo "-->";
     //var_dump($aRecentPostsReblogged);
     // the activity_id is important to connect the posts with the blorm-data
     foreach ( $aRecentPostsRebloged as $aRecentPostRebloged) {
@@ -91,8 +96,14 @@ function add_getstream_data_to_head() {
 
     $bodyObjects = json_decode(get_option( 'blorm_getstream_cached_post_data' ));
 
-    if ($bodyObjects == null) return;
-
+    if ($bodyObjects == null) {
+        echo "\n<script type=\"text/javascript\">\n";
+        echo "console.log('BLORM ERROR: could not load blorm frontend data from cache');\n";
+        echo "var blormapp = {postConfig: {},\n blormPosts: {}\n, reblogedPosts: {}\n}\n";
+        echo "</script>\n";
+        echo "<!-- end rendering blorm data reblogs and shares -->\n";
+        return;
+    }
     // blorm data for local usage
     $aGetStreamCreatedData = array();
     $aGetStreamReblogedData = array();
@@ -237,4 +248,5 @@ function add_getstream_data_to_head() {
             blormPosts: ".json_encode($aGetStreamCreatedData, JSON_PRETTY_PRINT).",\n
             reblogedPosts: ".json_encode($aGetStreamReblogedData, JSON_PRETTY_PRINT)."\n";
     echo "}\n</script>";
+    echo "\n<!-- end rendering blorm data reblogs and shares -->\n";
 }

@@ -35,6 +35,10 @@ function blorm_created_class (array $classes, $class, $post_id) {
 add_action( 'pre_get_posts', 'blorm_add_posttype_blorm_to_loop' );
 function blorm_add_posttype_blorm_to_loop( $query ) {
 
+    if (is_admin()) {
+        return $query;
+    }
+
     $options_config = get_option( 'blorm_plugin_options_frontend' );
     $options_cat = get_option( 'blorm_plugin_options_category' );
 
@@ -196,14 +200,14 @@ function blorm_mod_the_posts($posts) {
             if ( isset( $options['position_widget_menue']) ) {
                 if ( $options['position_widget_menue'] === 'add_blorm_info_before_title' ) {
 
-                    $post->post_title = '<div class="blormWidget" data-postid="'.$post->ID.'" data-activityid="'.$acivityId.'"></div><span class="material-icons">content_copy</span>&nbsp;'.$post->post_title;
+                    $post->post_title = '<div class="blormWidget" data-postid="'.$post->ID.'" data-activityid="'.$acivityId.'"></div><span class="material-icons">content_copy</span>'.$post->post_title;
                 }
             }
 
             if ( isset( $options['position_widget_menue']) ) {
                 if ( $options['position_widget_menue'] === 'add_blorm_info_after_title' ) {
 
-                    $post->post_title = '<span class="material-icons">content_copy</span>&nbsp;'.$post->post_title . '<div class="blormWidget" data-postid="'.$post->ID.'" data-activityid="'.$acivityId.'"></div>';
+                    $post->post_title = '<span class="material-icons">content_copy</span>'.$post->post_title . '<div class="blormWidget" data-postid="'.$post->ID.'" data-activityid="'.$acivityId.'"></div>';
                     if (isset($a["blorm_reblog_activity_id"])) {
                         $post->post_title = 'Rebloged: '. $post->post_title;
                     }
@@ -214,7 +218,7 @@ function blorm_mod_the_posts($posts) {
             if ( isset( $options['position_widget_menue']) ) {
                 if ( $options['position_widget_menue'] === 'add_blorm_info_before_content' ) {
                     if (isset($a["blorm_reblog_activity_id"])) {
-                        $post->post_title = '<span class="material-icons">content_copy</span>&nbsp;'. $post->post_title;
+                        $post->post_title = '<span class="material-icons">content_copy</span>'. $post->post_title;
                     }
 
                     $post->post_content = '<div class="blorm-post-content-container '.$post_class.'" data-postid="'.$post->ID.'" data-activityid="'.$acivityId.'"><span class="blormWidget" data-postid="'.$post->ID.'" data-activityid="'.$acivityId.'"></span>'.$post->post_content.'</div>';
@@ -225,7 +229,7 @@ function blorm_mod_the_posts($posts) {
             if ( isset( $options['position_widget_menue']) ) {
                 if ( $options['position_widget_menue'] === 'add_blorm_info_after_content' ) {
                     if (isset($a["blorm_reblog_activity_id"])) {
-                        $post->post_title = '<span class="material-icons">content_copy</span>&nbsp;'. $post->post_title;
+                        $post->post_title = '<span class="material-icons">content_copy</span>'. $post->post_title;
                     }
 
                     $post->post_content = '<div class="blorm-post-content-container '.$post_class.'" data-postid="'.$post->ID.'" data-activityid="'.$acivityId.'">'.$post->post_content.'<span class="blormWidget" data-postid="'.$post->ID.'" data-activityid="'.$acivityId.'"></span></div>';
@@ -237,7 +241,7 @@ function blorm_mod_the_posts($posts) {
             if ( isset( $options['position_widget_menue']) ) {
                 if ( $options['position_widget_menue'] === 'add_blorm_info_on_image' ) {
                     if (isset($a["blorm_reblog_activity_id"])) {
-                        $post->post_title = '<span class="material-icons">content_copy</span>&nbsp;'.$post->post_title;
+                        $post->post_title = '<span class="material-icons">content_copy</span>'.$post->post_title;
                     }
 
                     $post->post_content = '<div class="blorm-post-content-container '.$post_class.'" data-postid="'.$post->ID.'" data-activityid="'.$acivityId.'">'.$post->post_content.'</div>';

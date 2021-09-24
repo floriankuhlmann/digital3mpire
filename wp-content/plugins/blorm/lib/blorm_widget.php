@@ -138,7 +138,7 @@ class DisplayWidget extends \WP_Widget
 
             //echo $blormpost->post_content;
             echo "<div class='blorm-display-posts-widget-element ".$instance['cssClassPost']."' data-postid='".$blormpost->ID."' data-activityid='".$acivityId."'>";
-            echo "<div class='blorm-display-posts-widget-element-title'><span class=\"material-icons\">content_copy</span>&nbsp;<a href='#'>".get_the_title($blormpost)."</a></div>";
+            echo "<div class='blorm-display-posts-widget-element-title'><span class=\"material-icons\">content_copy</span><a href='#'>".get_the_title($blormpost)."</a></div>";
 
             if (isset($instance['showImage'])) {
                 if ($instance['showImage'] ) {
