@@ -31,7 +31,9 @@
 }
 
 
-.type-blormpost .material-icons{
+.blormwidget-on-image-post a span.material-icons,
+.blormwidget-add-to-content a span.material-icons,
+.blorm-display-posts-widget-element-title span.material-icons {
     padding-right: 0.5rem;
 }
 
@@ -110,7 +112,7 @@
     right:0;
     padding: 0;
     width: 50%;
-    height: 50%;
+    height: 30%;
     background-image: url("../images/blorm_icon_bubble_right_bottom_sw.png");
     background-position: right bottom;
     background-repeat: no-repeat;
@@ -199,6 +201,7 @@
     margin: 5px 0 0 0;
     position: relative;
     width:200px;
+    font-weight: normal;
 }
 
 .blormWidget .blormWidgetContainerMenu .blormWidgetContainerDisplay {

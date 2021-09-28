@@ -73,10 +73,7 @@ function add_getstream_data_to_head() {
     // get all posts from this plattformed that are shared on blorm
     $aRecentPostsRebloged = wp_get_recent_posts(array('meta_key' => 'blorm_reblog_activity_id','post_type' => 'blormpost'));
 
-    echo "<!-- getstream_data_to_head";
-    var_dump($aRecentPostsRebloged);
-    echo "-->";
-    //var_dump($aRecentPostsReblogged);
+    echo "<!-- getstream_data_to_head -->";
     // the activity_id is important to connect the posts with the blorm-data
     foreach ( $aRecentPostsRebloged as $aRecentPostRebloged) {
         $meta = get_post_meta($aRecentPostRebloged["ID"]);
