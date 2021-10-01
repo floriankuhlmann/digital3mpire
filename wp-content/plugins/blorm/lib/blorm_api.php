@@ -179,7 +179,7 @@ function postRequestLocalPostsUpdate($request, $response) {
                 $rBody = json_decode($response["body"]);
                 add_post_meta($bodyObj->{'teaser'}->{'postid'},"blorm_create_activity_id",$rBody->data->activity_id);
             }
-
+            blorm_cron_getstream_user_public_exec();
             break;
 
         // REBLOG
@@ -252,32 +252,29 @@ function postRequestLocalPostsUpdate($request, $response) {
                       set_post_thumbnail( $post_id, $attachment_id );
                     }
                 }
-
+                blorm_cron_getstream_user_public_exec();
             }
             break;
 
         // SHARE
         case (preg_match('/^(blogpost\/share)\/?$/', $parameter["restparameter"]) ? true : false) :
 
-            error_log("postRequestLocalPostsUpdate restparameter share");
-            error_log(json_encode($body));
-            error_log("postRequestLocalPostsUpdate restparameter SHARED: ");
-
+            blorm_cron_getstream_user_public_exec();
             break;
-
 
         // DELETE
         case (preg_match('/^(blogpost\/delete\/)[a-z0-9-]+$/', $parameter["restparameter"]) ? true : false) :
 
         	$delparameter = explode('/', $parameter["restparameter"]);
 
-            /*if ($response) {
+            if (!is_a($response, 'WP_Error' )) {
                 $recent_posts_with_meta = wp_get_recent_posts(array('meta_key' => 'blorm_create_activity_id', 'meta_value' => end($delparameter)));
 	            if (isset($recent_posts_with_meta[0])) {
 		            delete_post_meta($recent_posts_with_meta[0]["ID"],"blorm_create_activity_id");
 		            delete_post_meta($recent_posts_with_meta[0]["ID"],"blorm_create");
 	            }
-            }*/
+                blorm_cron_getstream_user_public_exec();
+            }
 
             break;
 

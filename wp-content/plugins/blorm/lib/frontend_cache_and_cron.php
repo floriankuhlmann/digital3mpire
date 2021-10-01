@@ -23,12 +23,12 @@ function blorm_add_cron_getstream_interval( $schedules ) {
     return $schedules;
 }
 
-add_action( 'blorm_cron_getstream_hook', 'blorm_cron_getstream_exec' );
+add_action( 'blorm_cron_getstream_hook', 'blorm_cron_getstream_user_public_exec' );
 if ( ! wp_next_scheduled( 'blorm_cron_getstream_hook' ) ) {
     wp_schedule_event( time(), 'onehundredeighty_seconds', 'blorm_cron_getstream_hook' );
 }
 
-function blorm_cron_getstream_exec() {
+function blorm_cron_getstream_user_public_exec() {
 
     $getstreamPostObjects = "{}";
 

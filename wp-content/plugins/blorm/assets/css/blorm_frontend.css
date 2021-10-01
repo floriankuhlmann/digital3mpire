@@ -54,11 +54,13 @@
 }
 
 .blorm-display-posts-widget-element .blormWidgetImageWrapper,
+.blorm-shared .blormWidgetImageWrapper,
 .blormpost .blormWidgetImageWrapper {
     position: relative;
 }
 
 .blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon,
+.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon,
 .blormpost .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon {
     position: absolute;
     width: 50%;
@@ -69,6 +71,7 @@
 }
 
 .blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.topleft,
+.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.topleft,
 .blormpost .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.topleft {
     top:0;
     left:0;
@@ -76,6 +79,7 @@
 }
 
 .blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.topright,
+.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.topright,
 .blormpost .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.topright {
     top:0;
     right:0;
@@ -83,6 +87,7 @@
 }
 
 .blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.bottomleft,
+.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.bottomleft,
 .blormpost .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.bottomleft {
     bottom:0;
     left:0;
@@ -90,6 +95,7 @@
 }
 
 .blorm-display-posts-widget-element  .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.bottomright,
+.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.bottomright,
 .blormpost .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.bottomright {
     bottom:0;
     right:0;
@@ -97,6 +103,7 @@
 }
 
 .blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon img.blormWidgetImagelayerBlormIconImg,
+.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon img.blormWidgetImagelayerBlormIconImg,
 .blormpost .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon img.blormWidgetImagelayerBlormIconImg {
     position: absolute;
     width: 20%;
@@ -106,13 +113,14 @@
 }
 
 .blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerWidget,
+.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerWidget,
 .blormpost .blormWidgetImageWrapper .blormWidgetImagelayerWidget {
     position: absolute;
     bottom:0;
     right:0;
     padding: 0;
     width: 50%;
-    height: 30%;
+    height: 50%;
     background-image: url("../images/blorm_icon_bubble_right_bottom_sw.png");
     background-position: right bottom;
     background-repeat: no-repeat;
@@ -125,6 +133,7 @@
 }
 
 .blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerWidget .blormWidget,
+.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerWidget .blormWidget,
 .blormpost .blormWidgetImageWrapper .blormWidgetImagelayerWidget .blormWidget {
     position: absolute;
     width:100%;
