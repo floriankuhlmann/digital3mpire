@@ -115,7 +115,7 @@ function add_getstream_data_to_head() {
 
                 $id = array_search($bodyObject->id, array_column($aBlormCreatePosts, "activity_id"));
                 $getStreamData->PostId = $aBlormCreatePosts[$id]["post_id"];
-
+                $getStreamData->PostType = "blormpost";
                 $getStreamData->ActivityId = $bodyObject->id;
 
                 $getStreamData->ReblogedCount = 0;
@@ -154,6 +154,7 @@ function add_getstream_data_to_head() {
 
                 $id = array_search($bodyObject->id, array_column($aBlormReblogedPosts, "activity_id"));
                 $getStreamData->PostId = $aBlormReblogedPosts[$id]["post_id"];
+                $getStreamData->PostType = "blormreblog";
                 $getStreamData->ActivityId = $bodyObject->id;
                 $getStreamData->TeaserImage = $aBlormReblogedPosts[$id]["teaser_image"];
                 $getStreamData->TeaserUrl = $aBlormReblogedPosts[$id]["teaser_url"];
