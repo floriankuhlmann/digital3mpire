@@ -19,7 +19,7 @@ function enqueue_blorm_admin_theme_style() {
     if (is_admin() && $pagenow == 'index.php') {
 
 
-        wp_enqueue_script('blorm-admin-theme-app', plugins_url('../assets/js/blorm_app.js', __FILE__), '','',true);
+        wp_enqueue_script('blorm-admin-theme-app', plugins_url('../assets/js/blormAdminSocialApp.js', __FILE__), '','',true);
 
         /* Wordpress API backbone.js */
         wp_enqueue_script('wp-api');
@@ -48,7 +48,7 @@ function getConfigJs() {
     $jsdata =   "var blogurl = '".CONFIG_BLORM_BLOGURL."';\n";
     $jsdata .=  "var blogdomain = '".CONFIG_BLORM_BLOGDOMAIN."';\n";
     $jsdata .=  "var ajaxapi = blogdomain+ajaxurl;\n";
-    $jsdata .=  "var templateUrl = '".plugins_url()."';\n";
+    $jsdata .=  "var pluginUrl = '".plugins_url()."';\n";
     $jsdata .=  "var blormPluginUrl = '".plugins_url()."/blorm';\n";
     // user data fallback definiton
     // account: is the logged in blorm-account connected to the api via the key
@@ -65,9 +65,7 @@ function getConfigJs() {
                         \"website_type\": \"*\",
                         \"website_id\": \"*\",
                     }
-                };\n
-                blormapp.user = blormapp.account;
-                ";
+                };\n";
 
     if ($blormUserAccountData->error != null) {
         $jsdata .= $userdata;
@@ -103,9 +101,7 @@ function getConfigJs() {
                         teasertext:\"".$teasertext."\"
                         },\n";
     }
-    $userdata .=  "]\n
-                };\n
-                blormapp.user = blormapp.account;\n";
+    $userdata .=  "]};\n";
 
     $jsdata .= $userdata;
 

@@ -99,7 +99,7 @@ function add_dashboard_blorm_feed_widget() {
     }
     wp_add_dashboard_widget(
         'BlormDashboardWidgetFeed', // Widget slug.
-        '<a href="/wp-admin/index.php"><img src="'.plugins_url( 'blorm/assets/images/blorm_logo_world.png' ).'" class="blormImage"></a> <blorm-username fill-word-second-person="r" fill-word-third-person="s"></blorm-username> Feed',
+        '<a href="/wp-admin/index.php"><img src="'.plugins_url( 'blorm/assets/images/blorm_logo_world_FFFFFF.png' ).'" class="blormImage"></a> <blorm-username fill-word-second-person="r" fill-word-third-person="s"></blorm-username> Feed',
         'blorm_dashboard_widget_feed_function' // Display function.
     );
 }

@@ -18,7 +18,9 @@ function get_blorm_config() {
     $api_options = Array(
 	    'api' => 'https://api.blorm.io',
 	    'version' => '0.9',
-        'update_intervall' => '180',
+        'update_intervall_180' => '180',
+        'update_intervall_120' => '120',
+        'update_intervall_60' => '60',
     );
 
     $configDevFile = ABSPATH . 'config_blorm_dev.php';

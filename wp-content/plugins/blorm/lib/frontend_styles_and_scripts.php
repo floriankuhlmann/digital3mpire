@@ -4,11 +4,11 @@
  * setup js and css for the frontend rendering
  *
  */
-
+/*
 function getBlormFrontendConfigJs() {
     $jsdata =  "var blormAssets = '".plugins_url()."/blorm/assets/';\n";
     return $jsdata;
-}
+}*/
 
 
 // Enqueue Stylesheet and Js for frontend rendering.
@@ -16,30 +16,44 @@ function getBlormFrontendConfigJs() {
 add_action( 'wp_enqueue_scripts', 'enqueue_blorm_frontend_theme_style');
 function enqueue_blorm_frontend_theme_style() {
 
-    $catId = '';
-    $options = get_option( 'blorm_plugin_options_category' );
-    if (isset( $options['blorm_category_show_reblogged'] )) {
-        $catId = $options['blorm_category_show_reblogged'];
-    }
-
-    if (is_home() || is_single() || is_category($catId)) {
+    if (!is_admin()) {
         wp_enqueue_style ('blorm-theme-style', plugins_url('blorm/assets/css/blorm_frontend.css'));
+        //wp_enqueue_style( 'jBoxcss', 'https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css');
     }
 }
 
 add_action( 'wp_enqueue_scripts', 'enqueue_blorm_frontend_js');
 function enqueue_blorm_frontend_js() {
 
-    $catId = '';
-    $options = get_option( 'blorm_plugin_options_category' );
-    if (isset( $options['blorm_category_show_reblogged'] )) {
-        $catId = $options['blorm_category_show_reblogged'];
+    if (is_admin()) {
+      return;
     }
+    //wp_enqueue_script( 'jBoxjs',  'https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js');
+    wp_enqueue_script( 'blorm-mobile-detect', plugins_url( 'blorm/assets/js/mobile-detect.min.js' ) );
+    wp_enqueue_script( 'blorm-widget', plugins_url( 'blorm/assets/js/blorm_widget_menue.js' ) );
+    wp_enqueue_script( 'blorm-widget-builder', plugins_url( 'blorm/assets/js/blormWidgetBuilder.js' ) );
 
-    if (is_home() || is_single() || is_category($catId)) {
-        wp_enqueue_script( 'blorm-mobile-detect', plugins_url( 'blorm/assets/js/mobile-detect.min.js' ) );
-        wp_enqueue_script( 'blorm-theme-js', plugins_url( 'blorm/assets/js/blorm_web_widget.js' ) );
-        wp_add_inline_script( 'blorm-theme-js', getBlormFrontendConfigJs(), 'before' );
+    $frontend_options_config = get_option( 'blorm_plugin_options_frontend' );
+    if (isset($frontend_options_config['position_widget_menue'])) {
+        if ( $frontend_options_config['position_widget_menue'] === 'add_blorm_info_on_image' ) {
+            wp_enqueue_script( 'blorm-widget-on-image', plugins_url('blorm/assets/js/blorm_init_widget_on_image.js'));
+        }
+
+        if ( $frontend_options_config['position_widget_menue'] === 'add_blorm_info_before_content' ||
+            $frontend_options_config['position_widget_menue'] === 'add_blorm_info_after_content' ||
+            $frontend_options_config['position_widget_menue'] === 'add_blorm_info_before_title' ||
+            $frontend_options_config['position_widget_menue'] === 'add_blorm_info_after_title'
+        ) {
+            wp_enqueue_script( 'blorm-widget-to-content', plugins_url('blorm/assets/js/blorm_init_widget_to_content.js'));
+        }
+
+        if ( $frontend_options_config['position_widget_menue'] === 'add_blorm_info_on_theme_tag' ) {
+            wp_enqueue_script( 'blorm-widget-on-theme', plugins_url('blorm/assets/js/blorm_init_widget_on_theme_tag.js'));
+        }
+
+        /*if ( $frontend_options_config['position_widget_menue'] === 'add_blorm_info_on_special_class' ) {
+            wp_enqueue_script( 'blorm-widget-on-image', plugins_url('blorm/assets/js/blorm_web_widget_on_special_class.js'));
+        }*/
     }
 }
 
@@ -73,7 +87,6 @@ function add_getstream_data_to_head() {
     // get all posts from this plattformed that are shared on blorm
     $aRecentPostsRebloged = wp_get_recent_posts(array('meta_key' => 'blorm_reblog_activity_id','post_type' => 'blormpost'));
 
-    echo "<!-- getstream_data_to_head -->";
     // the activity_id is important to connect the posts with the blorm-data
     foreach ( $aRecentPostsRebloged as $aRecentPostRebloged) {
         $meta = get_post_meta($aRecentPostRebloged["ID"]);
@@ -92,6 +105,11 @@ function add_getstream_data_to_head() {
     // the data is loaded every 180 seconds via cron schedule 'blorm_cron_getstream_hook' and stored to wp_options
 
     $bodyObjects = json_decode(get_option( 'blorm_getstream_cached_post_data' ));
+
+    if ($bodyObjects == null) {
+        blorm_cron_getstream_user_public_exec();
+        $bodyObjects = json_decode(get_option( 'blorm_getstream_cached_post_data' ));
+    }
 
     if ($bodyObjects == null) {
         echo "\n<script type=\"text/javascript\">\n";
@@ -239,12 +257,42 @@ function add_getstream_data_to_head() {
         $blormPostConfig->positionUnit = $options['position_widget_menue_adjust_positionUnit'];
     }
 
+    $blormPostConfig->specialCssClassForPost = "";
+    if (isset( $options['special_css_class_for_post'] )) {
+        $blormPostConfig->specialCssClassForPost = $options['special_css_class_for_post'];
+    }
 
-    echo "<script type=\"text/javascript\">\n\n";
-    echo "var blormapp = {
-			postConfig: ".json_encode($blormPostConfig, JSON_PRETTY_PRINT).",\n
-            blormPosts: ".json_encode($aGetStreamCreatedData, JSON_PRETTY_PRINT).",\n
-            reblogedPosts: ".json_encode($aGetStreamReblogedData, JSON_PRETTY_PRINT)."\n";
-    echo "}\n</script>";
-    echo "\n<!-- end rendering blorm data reblogs and shares -->\n";
+    $blormPostConfig->specialCssClassForPostImg = "";
+    if (isset( $options['special_css_class_for_post_img'] )) {
+        $blormPostConfig->specialCssClassForPostImg = $options['special_css_class_for_post_img'];
+    }
+
+    echo '<script type="text/javascript">
+            var blormapp = {
+			postConfig: '.json_encode($blormPostConfig, JSON_UNESCAPED_UNICODE).',
+            blormPosts: '.json_encode($aGetStreamCreatedData, JSON_UNESCAPED_UNICODE).',
+            reblogedPosts: '.json_encode($aGetStreamReblogedData, JSON_UNESCAPED_UNICODE).',
+            getPostById: function(id) {
+                    let post = {};
+                    if (typeof blormapp.reblogedPosts[id] != "undefined") {
+                        post = blormapp.reblogedPosts[id];
+                    }
+                    if (typeof blormapp.blormPosts[id] != "undefined") {
+                        post = blormapp.blormPosts[id];
+                    }
+                    return post;
+                },
+            getAllBlormPosts: function() {
+                    let allTypeBlormPosts = [];
+                    allTypeBlormPosts = Array.from(document.getElementsByClassName("type-blormpost"));
+                    let allBlormSharedPosts = [];
+                    allBlormSharedPosts = Array.from(document.getElementsByClassName("blorm-shared"));
+                    let specialCssClassPosts = [];
+                    if (blormapp.postConfig.specialCssClassForPost !== "") {
+                        specialCssClassPosts = Array.from(document.getElementsByClassName(this.postConfig.specialCssClassForPost));
+                    }
+                    return allTypeBlormPosts.concat(allBlormSharedPosts, specialCssClassPosts);
+                }
+           }</script>';
+    echo "<!-- end rendering blorm data reblogs and shares -->\n";
 }

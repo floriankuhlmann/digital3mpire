@@ -30,189 +30,89 @@
     font-feature-settings: 'liga';
 }
 
-
-/*.blormwidget-on-image-post a span.material-icons,
-.blormwidget-add-to-content a span.material-icons,*/
 .blormpost span.material-icons,
 .blorm-shared span.material-icons,
 .blorm-display-posts-widget-element-title span.material-icons {
-    padding-right: 0.5rem;
+    padding-right: 0.1rem;
 }
 
-/*.blorm-post-content-container {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.blormpost .blorm-icon {
-    height: 1em;
-    line-height: 1em;
-}
-
-.blormpost .blorm-icon img {
-    height: 0.75em;
-    width: auto;
-    padding-right: 0.5rem;
-}*/
-
-.blorm-display-posts-widget-element .blormWidgetImageWrapper,
-.blorm-shared .blormWidgetImageWrapper,
-.blormpost .blormWidgetImageWrapper {
-    position: relative;
-}
-
-.blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon,
-.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon,
-.blormpost .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon {
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.topleft,
-.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.topleft,
-.blormpost .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.topleft {
+.blormWidgetImagelayerBlormIcon.topleft {
     top:0;
     left:0;
-    background-image: url("../images/blorm_icon_bubble_left_top_sw.png");
+    background-image: url("../src/images/blorm_icon_bubble_left_top_sw.png");
 }
 
-.blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.topright,
-.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.topright,
-.blormpost .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.topright {
+.blormWidgetImagelayerBlormIcon.topright {
     top:0;
     right:0;
-    background-image: url("../images/blorm_icon_bubble_right_top_sw.png");
+    background-image: url("../src/images/blorm_icon_bubble_right_top_sw.png");
 }
 
-.blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.bottomleft,
-.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.bottomleft,
-.blormpost .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.bottomleft {
+.blormWidgetImagelayerBlormIcon.bottomleft {
     bottom:0;
     left:0;
-    background-image: url("../images/blorm_icon_bubble_left_bottom_sw.png");
+    background-image: url("../src/images/blorm_icon_bubble_left_bottom_sw.png");
 }
 
-.blorm-display-posts-widget-element  .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.bottomright,
-.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.bottomright,
-.blormpost .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon.bottomright {
+.blormWidgetImagelayerBlormIcon.bottomright {
     bottom:0;
     right:0;
-    background-image: url("../images/blorm_icon_bubble_right_bottom_sw.png");
+    background-image: url("../src/images/blorm_icon_bubble_right_bottom_sw.png");
 }
 
-.blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon img.blormWidgetImagelayerBlormIconImg,
-.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon img.blormWidgetImagelayerBlormIconImg,
-.blormpost .blormWidgetImageWrapper .blormWidgetImagelayerBlormIcon img.blormWidgetImagelayerBlormIconImg {
-    position: absolute;
-    width: 20%;
-    height: auto;
-    top: 10px;
-    left: 10px;
+.blormWidgetImageWrapper .blormWidgetImagelayerWidget.alignLeft{
+    background-image: url("../src/images/blorm_icon_bubble_left_bottom_sw.png");
+    background-position: left bottom;
+    left:0;
 }
 
-.blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerWidget,
-.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerWidget,
-.blormpost .blormWidgetImageWrapper .blormWidgetImagelayerWidget {
-    position: absolute;
-    bottom:0;
-    right:0;
-    padding: 0;
-    width: 50%;
-    height: 50%;
-    background-image: url("../images/blorm_icon_bubble_right_bottom_sw.png");
+.blormWidgetImageWrapper .blormWidgetImagelayerWidget.alignRight{
+    background-image: url("../src/images/blorm_icon_bubble_right_bottom_sw.png");
     background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-/*.blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerWidget {
-    width: 75%;
-    height: 75%;
-}*/
-
-/*.blorm-display-posts-widget-element .blormWidgetImageWrapper .blormWidgetImagelayerWidget .blormWidget,
-.blorm-shared .blormWidgetImageWrapper .blormWidgetImagelayerWidget .blormWidget,
-.blormpost .blormWidgetImageWrapper */
-.blormWidgetImagelayerWidget .blormWidget {
-    position: absolute;
-    color: #000;
-    bottom: 10px;
-    right: 10px;
-}
-
-.blorm-display-posts-widget-element .blorm-display-posts-widget-element-title {
-    font-weight: bold;
-    padding-bottom: 0.5em;
-}
-
-.blorm-display-posts-widget-element .blorm-display-posts-widget-element-image {
-    padding-bottom: 0.5em;
-}
-
-.blorm-display-posts-widget-element .blorm-display-posts-widget-element-excert {
-    padding-bottom: 0.5em;
+    right:0;
 }
 
 
-.blormWidget {
-    position: relative;
-    width:100%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: #000;
-}
-
-
-.blormWidget .blormWidgetContainerMenu ul,
-.blormWidget .blormWidgetContainerMenu li,
-.blormWidget .blormWidgetContainerMenu ol {
-    font-size: 1em !important;
-}
-
-.blormWidget .FloatRight {
+/*
+div.blormWidget .FloatRight {
     float:right;
 }
 
-.blormWidget .AlignRight {
+div.blormWidget .AlignRight {
     text-align:right;
 }
 
-.blormWidget .PositionRight {
+div.blormWidget .PositionRight {
     right:0;
 }
 
-.blormWidget .FloatLeft {
+div.blormWidget .FloatLeft {
     float:left;
 }
 
-.blormWidget .AlignLeft {
+div.blormWidget .AlignLeft {
     text-align:left;
 }
 
-.blormWidget .PositionLeft {
+div.blormWidget .PositionLeft {
     left:0;
 }
 
-.blormWidget .BorderBottom {
+div.blormWidget .BorderBottom {
     border-bottom: 1px solid black;
 }
 
-.blormWidget .blormWidgetContainerMenu {
+
+div.blormWidget .blormWidgetContainerMenu {
     right: 0;
     padding: 0;
     margin: 5px 0 0 0;
     position: relative;
-    width:200px;
     font-weight: normal;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetContainerDisplay {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetContainerDisplay {
     display: block;
-    /*height: 52px;*/
 }
 
 /*@media only screen
@@ -222,41 +122,41 @@ and (max-device-width: 860px) {
         height: 52px;
     }
 }*/
-
-.blormWidget .blormWidgetContainerMenu .blormWidgetPlus {
+/*
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus {
     display: block;
     height: 27px;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo,
-.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocial {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo,
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocial {
     height: 25px;
     margin: 0;
 }
 
-.blormWidget .FloatRight .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo,
-.blormWidget .FloatRight .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocial {
+div.blormWidget .FloatRight .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo,
+div.blormWidget .FloatRight .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocial {
     float: right;
     padding: 0 2px 0 0;
 }
 
-.blormWidget .FloatLeft .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo,
-.blormWidget .FloatLeft .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocial {
+div.blormWidget .FloatLeft .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo,
+div.blormWidget .FloatLeft .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocial {
     float: left;
     padding: 0 0 0 6px;
 }
 
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo ul,
-.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocial ul {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo ul,
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocial ul {
     list-style: none;
     margin:0;
     padding:0;
     height:20px;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo ul li,
-.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocial ul li {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo ul li,
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocial ul li {
     display: inline-block;
     list-style: none;
     height:20px;
@@ -264,10 +164,11 @@ and (max-device-width: 860px) {
     padding:0;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPlusSocial .material-icons {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPlusSocial .material-icons {
     padding: 0px;
 }
 
+*/
 
 /*
 .blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo ul li img,
@@ -278,53 +179,51 @@ and (max-device-width: 860px) {
     width: auto;
     cursor: pointer;
 }*/
-
-.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocial ul li.blormWidgetPlusSocialBarText{
-    /*vertical-align: super;*/
+/*
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocial ul li.blormWidgetPlusSocialBarText{
     padding-right: 5px;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusLogoIcon {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusLogoIcon {
     height: 25px;
-    /*float: right;*/
     padding: 1px 0 0 0;
     margin: 0;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo {
     margin: 1px 7px 0 2px;
 }
 
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocialBarIcon {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocialBarIcon {
     cursor: pointer;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocialBarIcon .material-icons {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocialBarIcon .material-icons {
     font-size:1.5em;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusLogoIcon img {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusLogoIcon img {
     height: 18px;
-    /*margin-top: 2px;*/
     width: auto;
     line-height: 25px;
     cursor: pointer;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar {
     position: absolute;
     padding: 0px;
     margin: 0px;
     width:300px;
     height:0px;
-    /*border:1px solid red;*/
     top: 0px;
     z-index:1000;
     cursor: pointer;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar .blormWidgetPowerbarContent {
+ */
+/*
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar .blormWidgetPowerbarContent {
     position: relative;
     color:#fff;
     width:100%;
@@ -333,16 +232,16 @@ and (max-device-width: 860px) {
     float: left;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar .blormWidgetPowerbarContent a {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar .blormWidgetPowerbarContent a {
     color:#fff;
     text-decoration: underline grey;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar .blormWidgetPowerbarContent a:hover {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar .blormWidgetPowerbarContent a:hover {
     text-decoration: underline white;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar .blormWidgetPowerbarContent.DisplayTransition {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar .blormWidgetPowerbarContent.DisplayTransition {
     -webkit-transition: 1s;
     -moz-transition: 1s;
     -ms-transition: 1s;
@@ -351,7 +250,7 @@ and (max-device-width: 860px) {
     opacity: 100%;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar .blormWidgetPowerbarContent ul {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar .blormWidgetPowerbarContent ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -359,7 +258,7 @@ and (max-device-width: 860px) {
 
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar .blormWidgetPowerbarContent ul li {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar .blormWidgetPowerbarContent ul li {
     padding: 2px 4px 2px 2px;
     margin: 0;
     float: left;
@@ -367,7 +266,7 @@ and (max-device-width: 860px) {
     line-height: 14px;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar .blormWidgetPowerbarContent .PowerbarContentText {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPowerbar .blormWidgetPowerbarContent .PowerbarContentText {
     padding: 2px;
     margin: 0px;
     float: left;
@@ -375,33 +274,34 @@ and (max-device-width: 860px) {
     line-height: 14px;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPowerText {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPowerText {
     font-size: 14px;
     color: #333;
     width: 100%;
     /*position: absolute;
-    top: 25px;*/
     display: block;
     height: 25px;
     line-height: 25px;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPowerText a {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPowerText a {
     font-size: 14px;
     color:#000;
-    text-decoration: underline grey;
+    text-decoration: none !important;
+    box-shadow: 0 0 0 0;
 }
 
-.blormWidget .blormWidgetContainerMenu .blormWidgetPowerText a:hover {
+div.blormWidget .blormWidgetContainerMenu .blormWidgetPowerText a:hover {
     font-size: 14px;
     color:#000;
-    text-decoration: underline black;
+    text-decoration: none !important;
+    box-shadow: 0 0 0 0;
 }
-
+*/
 @media only screen
 and (max-device-width: 860px) {
 
-    .blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusLogoIcon img {
+    div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusLogoIcon img {
         height: 22px;
         margin-top: 0px;
         width: auto;
@@ -409,8 +309,8 @@ and (max-device-width: 860px) {
         cursor: pointer;
     }
 
-    .blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo img,
-    .blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocial ul li.blormWidgetPlusSocialBarIcon img {
+    div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusBlormInfo img,
+    div.blormWidget .blormWidgetContainerMenu .blormWidgetPlus .blormWidgetPlusSocial ul li.blormWidgetPlusSocialBarIcon img {
         padding-right: 1px;
         padding-bottom: 1px;
         height: 23px;

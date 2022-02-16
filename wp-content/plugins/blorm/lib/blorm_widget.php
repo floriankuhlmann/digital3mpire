@@ -25,6 +25,9 @@ class DisplayWidget extends \WP_Widget
      */
     public function widget( $args, $instance ) {
 
+
+        wp_enqueue_script( 'blorm-widget-init', plugins_url( 'blorm/assets/js/blorm_init_wp_widget.js'));
+
         $options = get_option( 'blorm_plugin_options_frontend' );
 
         if (isset( $options['display_config'] )) {
@@ -54,6 +57,7 @@ class DisplayWidget extends \WP_Widget
      * @param array $instance Previously saved values from database.
      */
     public function form( $instance ) {
+
         $title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( '', 'text_domain' );
         ?>
         <p>
@@ -61,39 +65,39 @@ class DisplayWidget extends \WP_Widget
             <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
         </p>
         <?php
-        $cssClassWidget = ! empty( $instance['cssClassWidget'] ) ? $instance['cssClassWidget'] : esc_html__( '', 'text_domain' );
+            $cssClassWidget = ! empty( $instance['cssClassWidget'] ) ? $instance['cssClassWidget'] : esc_html__( '', 'text_domain' );
         ?>
         <p>
             <label for="<?php echo esc_attr( $this->get_field_id( 'cssClassWidget' ) ); ?>"><?php esc_attr_e( 'Css-class name widget:', 'text_domain' ); ?></label>
             <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'cssClassWidget' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'cssClassWidget' ) ); ?>" type="text" value="<?php echo esc_attr( $cssClassWidget ); ?>">
         </p>
         <?php
-        $cssClassPost = ! empty( $instance['cssClassPost'] ) ? $instance['cssClassPost'] : esc_html__( '', 'text_domain' );
+            $cssClassPost = ! empty( $instance['cssClassPost'] ) ? $instance['cssClassPost'] : esc_html__( '', 'text_domain' );
         ?>
         <p>
             <label for="<?php echo esc_attr( $this->get_field_id( 'cssClassPost' ) ); ?>"><?php esc_attr_e( 'Css-class name single post:', 'text_domain' ); ?></label>
             <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'cssClassPost' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'cssClassPost' ) ); ?>" type="text" value="<?php echo esc_attr( $cssClassPost ); ?>">
         </p>
         <?php
-        $numberOfPosts = ! empty( $instance['numberOfPosts'] ) ? $instance['numberOfPosts'] : esc_html__( 'Number of Posts to display', 'text_domain' );
+            $numberOfPosts = ! empty( $instance['numberOfPosts'] ) ? $instance['numberOfPosts'] : esc_html__( 'Number of Posts to display', 'text_domain' );
         ?>
         <p>
             <label for="<?php echo esc_attr( $this->get_field_id( 'numberOfPosts' ) ); ?>"><?php esc_attr_e( 'Show number of posts:', 'text_domain' ); ?></label>
             <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'numberOfPosts' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'numberOfPosts' ) ); ?>" type="number" value="<?php echo esc_attr( $numberOfPosts ); ?>">
         </p>
         <?php
-        $showImage = ! empty( $instance['showImage'] ) ? $instance['showImage'] : esc_html__( 'Show image of post', 'text_domain' );
+            $showImage = ! empty( $instance['showImage'] ) ? "checked" : "";
         ?>
         <p>
             <label for="<?php echo esc_attr( $this->get_field_id( 'showImage' ) ); ?>"><?php esc_attr_e( 'Show image of posts:', 'text_domain' ); ?></label>
-            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'showImage' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'showImage' ) ); ?>" type="checkbox" value="<?php echo esc_attr( $showImage ); ?>">
+            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'showImage' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'showImage' ) ); ?>" type="checkbox" <?php echo esc_attr( $showImage ); ?>>
         </p>
         <?php
-        $showExcert = ! empty( $instance['showExcert'] ) ? $instance['showExcert'] : esc_html__( 'Show excert of post', 'text_domain' );
+            $showExcerpt = ! empty( $instance['showExcerpt'] ) ? "checked" : "";
         ?>
         <p>
-            <label for="<?php echo esc_attr( $this->get_field_id( 'showExcert' ) ); ?>"><?php esc_attr_e( 'Show excert of posts:', 'text_domain' ); ?></label>
-            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'showExcert' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'showExcert' ) ); ?>" type="checkbox" value="<?php echo esc_attr( $showExcert ); ?>">
+            <label for="<?php echo esc_attr( $this->get_field_id( 'showExcerpt' ) ); ?>"><?php esc_attr_e( 'Show excerpt of posts:', 'text_domain' ); ?></label>
+            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'showExcerpt' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'showExcerpt' ) ); ?>" type="checkbox" <?php echo esc_attr( $showExcerpt ); ?>>
         </p>
         <?php
     }
@@ -114,8 +118,8 @@ class DisplayWidget extends \WP_Widget
         $instance['numberOfPosts'] = ( ! empty( $new_instance['numberOfPosts'] ) ) ? sanitize_text_field( $new_instance['numberOfPosts'] ) : '';
         $instance['cssClassWidget'] = ( ! empty( $new_instance['cssClassWidget'] ) ) ? sanitize_text_field( $new_instance['cssClassWidget'] ) : '';
         $instance['cssClassPost'] = ( ! empty( $new_instance['cssClassPost'] ) ) ? sanitize_text_field( $new_instance['cssClassPost'] ) : '';
-        $instance['showImage'] = ( ! empty( $new_instance['showImage'] ) ) ? sanitize_text_field( $new_instance['showImage'] ) : '';
-        $instance['showExcert'] = ( ! empty( $new_instance['showExcert'] ) ) ? sanitize_text_field( $new_instance['showExcert'] ) : '';
+        $instance['showImage'] = $new_instance['showImage'];
+        $instance['showExcerpt'] = $new_instance['showExcerpt'];
 
         return $instance;
     }
@@ -125,31 +129,35 @@ class DisplayWidget extends \WP_Widget
 
         $blormposts = get_posts(array('post_type' => 'blormpost','numberposts' => $instance['numberOfPosts']));
 
-        echo "<div class='blormDisplayPostsWidget ".$instance['cssClassWidget']."'>";
+        $cssClassWidget = "";
+        $cssClassPost = "";
+
+        if ( !empty($instance['cssClassWidget'])) $cssClassWidget = $instance['cssClassWidget'];
+        if ( !empty($instance['cssClassPost'])) $cssClassPost = $instance['cssClassPost'];
+
+        echo "<div class='blorm-display-posts-widget ".$cssClassWidget."'>";
         foreach ($blormposts as $blormpost) {
 
             $a = get_post_meta($blormpost->ID);
 
             $acivityId = "";
-            $post_class = "blorm-post-data";
-            if (isset($a["blorm_reblog_activity_id"])) {
-                $acivityId = $a['blorm_reblog_activity_id'][0];
-            }
+            $showImage = "off";
+            $showExcerpt = "off";
+            if (isset($a["blorm_reblog_activity_id"])) $acivityId = $a['blorm_reblog_activity_id'][0];
+            if (isset($a["blorm_reblog_teaser_url"])) $post_url = $a['blorm_reblog_teaser_url'][0];
+            if (isset($instance['showImage'])) $showImage = $instance['showImage'];
+            if (isset($instance['showExcerpt'])) $showExcerpt = $instance['showExcerpt'];
 
             //echo $blormpost->post_content;
-            echo "<div class='blorm-display-posts-widget-element ".$instance['cssClassPost']."' data-postid='".$blormpost->ID."' data-activityid='".$acivityId."'>";
-            echo "<div class='blorm-display-posts-widget-element-title'><span class=\"material-icons\">content_copy</span><a href='#'>".get_the_title($blormpost)."</a></div>";
+            echo "<div class='blorm-display-posts-widget-element ".$cssClassPost."' data-postid='".$blormpost->ID."' data-activityid='".$acivityId."'>";
+            echo "<div class='blorm-display-posts-widget-element-title'><span class=\"material-icons\">content_copy</span><a href='".$post_url."'>".get_the_title($blormpost)."</a></div>";
 
-            if (isset($instance['showImage'])) {
-                if ($instance['showImage'] ) {
-                    echo "<div class='blorm-display-posts-widget-element-image'><a href='#'>".get_the_post_thumbnail($blormpost)."</a></div>";
-                }
+            if ($showImage == "on" ) {
+                echo "<div class='blorm-display-posts-widget-element-image'><a href='".$post_url."'>".get_the_post_thumbnail($blormpost)."</a></div>";
             }
 
-            if (isset($instance['showExcert'])) {
-                if ($instance['showExcert']) {
-                    echo "<div class='blorm-display-posts-widget-element-excert'><a href='#'>" . get_the_excerpt($blormpost) . "</a></div>";
-                }
+            if ($showExcerpt == "on" ) {
+                echo "<div class='blorm-display-posts-widget-element-excerpt'><a href='".$post_url."'>".get_the_excerpt($blormpost) . "</a></div>";
             }
 
             echo "</div>";

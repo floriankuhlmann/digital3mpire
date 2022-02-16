@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 // add ajax methods
 
@@ -59,12 +59,15 @@ function rest_blormapi_handler(WP_REST_Request $request) {
             return new WP_REST_Response(array("message" => "success", "url" => $movedFile['url']),200 ,array('Content-Type' => 'application/json'));
 
         }
-        error_log("movefile: ".$movedFile['url']);
+        //error_log("movefile: ".$movedFile['url']);
         return new WP_REST_Response(array("message" => "upload_error"),200 ,array('Content-Type' => 'application/json'));
     }
 
     // check before wp_remote_request (create, reblog)
-    preRequestLocalPostsUpdate($request);
+    $returnObj = preRequestLocalPostsUpdate($request);
+    if (  $returnObj->status == "cached" ) {
+        return new WP_REST_Response(json_decode($returnObj->data),200 ,array('Content-Type' => 'application/json'));
+    }
 
     // prepare the request
     $args = array(
@@ -74,8 +77,11 @@ function rest_blormapi_handler(WP_REST_Request $request) {
         'data_format' => 'body',
     );
     $params = $request->get_params();
-    $response = wp_remote_request(CONFIG_BLORM_APIURL ."/". $params['restparameter'], $args);
+    $requestURL = CONFIG_BLORM_APIURL ."/". $params['restparameter'];
+    if ($returnObj->query !== null) $requestURL .= $returnObj->query;
 
+    error_log("requestURL".$requestURL);
+    $response = wp_remote_request($requestURL, $args);
 
     // check after wp_remote_request (delete)
     postRequestLocalPostsUpdate($request,$response);
@@ -89,18 +95,80 @@ function preRequestLocalPostsUpdate(&$request) {
     $parameter = $request->get_params();
     $body = $request->get_body();
 
-    $status = "ok";
+    $returnObj = new stdClass();
+    $returnObj->status = "continue";
+    $returnObj->data = null;
+    $returnObj->query = null;
 
     switch($parameter["restparameter"]) {
 	    case (preg_match('/^(feed\/timeline)\/?$/', $parameter["restparameter"]) ? true : false) :
+            error_log("feed\/timeline: ".$parameter["restparameter"]);
 
-		    break;
+            $query = "";
+            if (isset($parameter["limit"])) {
+                error_log("timeline limit");
+                $query = "limit=" . $parameter["limit"];
+            }
+
+            if (isset($parameter["offset"])) {
+                error_log("timeline offset");
+                $query .= "&offset=" . $parameter["offset"];
+            }
+
+            if (isset($parameter["offset"]) || isset($parameter["limit"])) {
+                $returnObj->query = "?".$query;
+            }
+            return $returnObj;
+            break;
 
         //READ
         case (preg_match('/^(user\/data)\/?$/', $parameter["restparameter"]) ? true : false) :
 
-            error_log($parameter["restparameter"]);
-            error_log(json_encode("hier user/data"));
+            //error_log($parameter["restparameter"]);
+            //error_log(json_encode("hier user/data"));
+
+            break;
+        case (preg_match('/^(feed\/followers\/user)\/[0-9]+$/', $parameter["restparameter"]) ? true : false) :
+            // can we load from cache?
+            $parameter = explode('/', $parameter["restparameter"]);
+            $userparameter = end($parameter);
+
+            $blormUserAccountData = getUserAccountDataFromBlorm();
+            if ($blormUserAccountData->error !== null) {
+                error_log("error blorm_cron_getstream_update_followers_exec: account user data missing in cache");
+                return $returnObj;
+            }
+
+            if ($blormUserAccountData->user->id != $userparameter) {
+                return $returnObj;
+            }
+
+            $returnObj->status = "cached";
+            $returnObj->data = get_option( 'blorm_getstream_cached_followers_data' );
+
+            return $returnObj;
+
+            break;
+        case (preg_match('/^(feed\/following\/timeline)\/[0-9]+$/', $parameter["restparameter"]) ? true : false) :
+            // can we load from cache?
+
+            $parameter = explode('/', $parameter["restparameter"]);
+            $userparameter = end($parameter);
+
+            $blormUserAccountData = getUserAccountDataFromBlorm();
+            if ($blormUserAccountData->error !== null) {
+                error_log("error blorm_cron_getstream_update_followers_exec: account user data missing in cache");
+                return $returnObj;
+            }
+
+            if ($blormUserAccountData->user->id != $userparameter) {
+                return $returnObj;
+            }
+
+            $returnObj->status = "cached";
+            $returnObj->data = get_option( 'blorm_getstream_cached_following_users_data' );
+
+            return $returnObj;
 
             break;
         // CREATE
@@ -134,7 +202,7 @@ function preRequestLocalPostsUpdate(&$request) {
                 $thumbId = get_post_thumbnail_id($the_query[0]->ID);
                 delete_post_meta($thumbId, "_wp_attached_file");
                 delete_post_meta($thumbId, "_wp_attachment_metadata");
-                delete_post_meta($the_query[0]->I, "_thumbnail_id");
+                delete_post_meta($the_query[0]->ID, "_thumbnail_id");
 
                 // delete the thumbnail in post
                 wp_delete_post($thumbId);
@@ -151,7 +219,7 @@ function preRequestLocalPostsUpdate(&$request) {
             break;
     }
 
-    return $status;
+    return $returnObj;
 }
 
 
@@ -276,6 +344,20 @@ function postRequestLocalPostsUpdate($request, $response) {
                 blorm_cron_getstream_user_public_exec();
             }
 
+            break;
+
+        // CREATE
+        case (preg_match('/^(user\/follow\/blormhandle\/)[a-z0-9-]+$/', $parameter["restparameter"]) ? true : false) :
+            if ($response["response"]["code"] == "200") {
+                blorm_cron_getstream_update_following_users_exec();
+            }
+            break;
+
+        case (preg_match('/^(user\/unfollow\/blormhandle\/)[a-z0-9-]+$/', $parameter["restparameter"]) ? true : false) :
+
+            if ($response["response"]["code"] == "200") {
+                blorm_cron_getstream_update_following_users_exec();
+            }
             break;
 
         default:

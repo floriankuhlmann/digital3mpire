@@ -25,7 +25,67 @@ function blorm_plugin_options_page_submit() {
 	$blorm_plugin_options_api = array();
 	$blorm_plugin_options_frontend = array();
 
-    if ( isset( $_POST['_wpnonce'] ) && $_GET['page'] == 'blorm-plugin') {
+    // blorm-plugin-reset-cache-and-data-section
+    if ( isset( $_POST['_wpnonce'] ) && $_GET['page'] == 'blorm-plugin' && $_POST['option_page'] == 'blorm-plugin-reset-cache-and-data-section') {
+        if (isset( $_POST['deletereblog'] )) {
+            if ( $_POST['deletereblog'] == true ){
+                $blormPosts = get_posts(array('post_type' => 'blormpost'));
+                foreach ($blormPosts as $blormPost) {
+                    $id = $blormPost->ID;
+                    delete_post_meta($id,"blorm_reblog_teaser_image");
+                    delete_post_meta($id,"blorm_reblog_teaser_url");
+                    delete_post_meta($id,"blorm_reblog_object_iri");
+                    delete_post_meta($id,"blorm_reblog_activity_id");
+                    // delete the attached thumbnail in post meta
+                    $thumbId = get_post_thumbnail_id($id);
+                    delete_post_meta($thumbId, "_wp_attached_file");
+                    delete_post_meta($thumbId, "_wp_attachment_metadata");
+                    delete_post_meta($id, "_thumbnail_id");
+
+                    // delete the thumbnail in post
+                    wp_delete_post($thumbId);
+
+                    // delete the file in media
+                    wp_delete_attachment($id, true);
+
+                    // finaly delete the post
+                    wp_delete_post($id);
+                }
+
+                $recent_create_posts_by_meta = wp_get_recent_posts(array('meta_key' => 'blorm_create_activity_id'));
+                foreach ($recent_create_posts_by_meta as $post) {
+                    delete_post_meta( $post["ID"],"blorm_create_activity_id");
+                    delete_post_meta( $post["ID"],"blorm_create");
+                }
+            }
+        }
+
+        if (isset( $_POST['cacheposts'] )) {
+            if ( $_POST['cacheposts'] == true ){
+                update_option( 'blorm_getstream_cached_post_data', '');
+            }
+        }
+
+        if (isset( $_POST['cacheuser'] )) {
+            if ( $_POST['cacheuser'] == true ){
+                update_option( 'blorm_getstream_cached_user_data', '');
+                update_option( 'blorm_getstream_cached_following_users_data', '');
+                update_option( 'blorm_getstream_cached_followers_data', '');
+            }
+        }
+
+        if (isset( $_POST['cachereload'] )) {
+            if ( $_POST['cachereload'] == true ){
+                blorm_cron_getstream_user_exec();
+                blorm_cron_getstream_user_public_exec();
+                blorm_cron_getstream_update_followers_exec();
+                blorm_cron_getstream_update_following_users_exec();
+            }
+        }
+    }
+
+    // blorm-plugin-section
+    if ( isset( $_POST['_wpnonce'] ) && $_GET['page'] == 'blorm-plugin' && $_POST['option_page'] == 'blorm-plugin-section') {
 		if( wp_verify_nonce( $_POST['_wpnonce'], 'blorm-plugin-section-options' )) {
 
 			$blorm_plugin_options_api['api_key'] = trim($_POST['blorm_plugin_options_api']['api_key']);
@@ -43,7 +103,6 @@ function blorm_plugin_options_page_submit() {
 
 			// blorm_plugin_options_category[blorm_category_show_reblogged]
 			if (sizeof($_POST['blorm_plugin_options_category']) != 0) {
-
 
 				// get options
 				$options = get_option( 'blorm_plugin_options_category' );
@@ -77,8 +136,10 @@ function blorm_plugin_options_page_submit() {
 				}
 
                 // update the user and frontend cache
-                blorm_cron_getstream_user_exec();
+                /*blorm_cron_getstream_user_exec();
                 blorm_cron_getstream_user_public_exec();
+                blorm_cron_getstream_update_followers_exec();
+                blorm_cron_getstream_update_following_users_exec();*/
 				update_option('blorm_plugin_options_category', $_POST['blorm_plugin_options_category']);
 			}
 		}
@@ -92,16 +153,26 @@ function blorm_render_options_page() {
     <form action="<?php menu_page_url( 'blorm-plugin' ) ?>" method="post">
         <?php
         settings_fields( 'blorm-plugin-section' );
+        echo "<hr>";
         do_settings_sections( 'blorm-plugin-api-section' );
+        echo "<hr>";
         do_settings_sections( 'blorm-plugin-display-config-section' );
+        echo "<hr>";
         do_settings_sections( 'blorm-plugin-category-section' );
+        echo "<hr>";
         do_settings_sections( 'blorm-plugin-frontend-section' );?>
-        <input name="submit" class="button button-primary" type="submit" value="<?php esc_attr_e( 'Save' ); ?>" />
+        <input name="submit" class="button button-primary" type="submit" value="<?php esc_attr_e( 'SAVE' ); ?>" />
+    </form>
+    <br><br>
+    <form action="<?php menu_page_url( 'blorm-plugin' ) ?>" method="post">
+         <?php
+        settings_fields( 'blorm-plugin-reset-cache-and-data-section' );
+         echo "<hr>";
+         do_settings_sections( 'blorm-plugin-reset-cache-and-data-section' );?>
+            <input name="submit" class="button button-primary" type="submit" value="<?php esc_attr_e( 'RESET & DELETE' ); ?>" />
     </form>
     <?php
 }
-
-
 
 /*
  * https://developer.wordpress.org/reference/functions/add_settings_field/
@@ -110,14 +181,52 @@ function blorm_render_options_page() {
 /*
  *  api config
  */
+add_action( 'admin_init', 'blorm_reset_cache_and_data_section' );
+function blorm_reset_cache_and_data_section() {
 
+    // api key
+    add_settings_section(
+        'blorm-plugin-reset-cache-and-data-section',
+        'Reset cache and delete all Blorm data',
+        'blorm_plugin_reset_cache_and_data_section_text',
+        'blorm-plugin-reset-cache-and-data-section' );
+
+    add_settings_field(
+        'blorm_plugin_reset',
+        'Reset and delete:',
+        'blorm_plugin_reset',
+        'blorm-plugin-reset-cache-and-data-section',
+        'blorm-plugin-reset-cache-and-data-section' );
+
+}
+
+function blorm_plugin_reset_cache_and_data_section_text() {
+    echo "If you click here you can delete all blorm posts, cache and userdata on your local system.
+            <br><b>Please rethink twice before you click.</b>";
+}
+
+function blorm_plugin_reset() {
+
+    ?>
+    <input type="checkbox" id="deletereblog" name="deletereblog" value="true">
+    <label for="deletereblog"> Delete the rebloged posts</label><br>
+    <input type="checkbox" id="cacheposts" name="cacheposts" value="true">
+    <label for="cacheposts">Reset the posts data cache</label><br>
+    <input type="checkbox" id="cacheuser" name="cacheuser" value="true">
+    <label for="cacheuser">Reset the user data cache</label><br>
+    <input type="checkbox" id="cachereload" name="cachereload" value="true">
+    <label for="cacheuser">Reload cache data</label><br>
+    <?php
+
+}
+
+/*
+ *  api config
+ */
 add_action( 'admin_init', 'blorm_register_settings_api' );
 function blorm_register_settings_api() {
 
-    //register_setting( 'blorm-plugin-api-section', 'blorm_plugin_options_api', 'blorm_plugin_options_api_validate' );
-
     // api key
-
     add_settings_section(
             'blorm-plugin-api-section',
             'API Settings',
@@ -136,6 +245,7 @@ function blorm_register_settings_api() {
 
 function blorm_plugin_frontend_section_text() {
     echo '<p>Here you can set all the options for using the Plugin on the web</p>';
+
 }
 
 function blorm_plugin_setting_api_key() {
@@ -175,9 +285,10 @@ function blorm_register_settings_display_config() {
 function blorm_plugin_display_config_section_text() {
     echo "<p>Decide how to display the rebloged posts:
             <ul>
-            <li><i>loop only</i> - as regular posts in the loop on your homepage or in a category</li>
-             <li><i>widget only</i> - in the blorm widget, please do not forget to activate the widget</li>
-             <li><i>loop and widget</i> - or both variants.</li></ul></p>";
+            <li><i>main loop only</i> - as regular posts in the loop - in most cases used on your homepage</li>
+             <li><i>widget only</i> - in the blorm widget, please do not forget to <a href='/wp-admin/widgets.php'>activate the widget</a></li>
+             <li><i>category</i> - select a category to show the posts. Do not forget to select the category!</li>
+             <li><i>and combination</i> - show posts in different locations</li></ul></p>";
 }
 
 function blorm_plugin_setting_display_config() {
@@ -218,9 +329,16 @@ function blorm_register_settings_frontend_section() {
 
 	add_settings_section(
 		'blorm-plugin-frontend-section',
-		'Website display settings',
+		'Blorm social widget display settings',
 		'blorm_plugin_frontend_section_text',
 		'blorm-plugin-frontend-section' );
+
+    add_settings_field(
+        'blorm_plugin_setting_add_blorm_icon_to_title',
+        'Add the blorm icon to shared titles',
+        'blorm_plugin_setting_add_blorm_icon_to_title',
+        'blorm-plugin-frontend-section',
+        'blorm-plugin-frontend-section');
 
 	add_settings_field(
 		'blorm_plugin_setting_add_blorm_widget',
@@ -228,6 +346,20 @@ function blorm_register_settings_frontend_section() {
 		'blorm_plugin_setting_add_blorm_widget',
 		'blorm-plugin-frontend-section',
 		'blorm-plugin-frontend-section' );
+
+    add_settings_field(
+        'blorm_plugin_setting_add_special_css_class_post',
+        'Use special css class for post teasers',
+        'blorm_plugin_setting_add_special_css_class_post',
+        'blorm-plugin-frontend-section',
+        'blorm-plugin-frontend-section');
+
+    add_settings_field(
+        'blorm_plugin_setting_add_special_css_class_post_img',
+        'Use special css class for img in posts teasers',
+        'blorm_plugin_setting_add_special_css_class_post_img',
+        'blorm-plugin-frontend-section',
+        'blorm-plugin-frontend-section');
 
 	add_settings_field(
 		'blorm_plugin_setting_add_blorm_widget_position',
@@ -242,6 +374,28 @@ function blorm_register_settings_frontend_section() {
 
 function blorm_plugin_api_section_text() {
 	echo '<p>Here you can set all the options for using the API</p>';
+}
+
+
+function blorm_plugin_setting_add_blorm_icon_to_title() {
+    $options = get_option( 'blorm_plugin_options_frontend' );
+
+    $value = "";
+    if (isset( $options['blorm_icon_to_title'] )) {
+        $value = $options['blorm_icon_to_title'];
+    }
+
+    $isSelected = function($option_value) use ($value){
+        if ($value == $option_value) {
+            return "selected";
+        }
+    };
+
+    echo "<select id='blorm-plugin-options-frontend-blorm-icon-to-title' name='blorm_plugin_options_frontend[blorm_icon_to_title]'>\n
+            <option value='add_blorm_icon_to_title' ".$isSelected('add_blorm_icon_to_title').">Add icon to title</option>\n
+            <option value='add_blorm_icon_not_to_title' ".$isSelected('add_blorm_icon_not_to_title').">Do not add icon to title</option>\n
+            </select>";
+
 }
 
 function blorm_plugin_setting_add_blorm_widget() {
@@ -259,7 +413,11 @@ function blorm_plugin_setting_add_blorm_widget() {
 		}
 	};
 
-	echo "<p>Select the position of the blorm social widget for your shared posts.<br><br></p>";
+	echo "<p>Select the position of the blorm social widget for your shared posts. 
+             <br>You can try to automaticaly render it on 
+             <br>1) an image 
+             <br>2) behind|before title|content
+             <br>or 3) you insert the php code: <code>blorm_display_widget()</code> manually in your template.<br><br></p>";
 	echo "<select id='blorm_plugin_options_frontend-position_widget_menue' name='blorm_plugin_options_frontend[position_widget_menue]'>\n
             <option value='-'>Do not render</option>\n
             <option value='add_blorm_info_on_image' ".$isSelected('add_blorm_info_on_image').">on image</option>\n
@@ -267,7 +425,37 @@ function blorm_plugin_setting_add_blorm_widget() {
             <option value='add_blorm_info_after_content' ".$isSelected('add_blorm_info_after_content').">after content</option>\n
             <option value='add_blorm_info_before_title' ".$isSelected('add_blorm_info_before_title').">before title</option>\n
             <option value='add_blorm_info_after_title' ".$isSelected('add_blorm_info_after_title').">after title</option>\n
+            <option value='add_blorm_info_on_theme_tag' ".$isSelected('add_blorm_info_on_theme_tag').">insert blorm_display_widget() code in theme</option>\n
            </select>";
+}
+
+function blorm_plugin_setting_add_special_css_class_post() {
+    $options = get_option( 'blorm_plugin_options_frontend' );
+
+    // css class
+    $value_special_css_class_for_post = "";
+    if (isset( $options['special_css_class_for_post'] )) {
+        $value_special_css_class_for_post = $options['special_css_class_for_post'];
+    }
+
+    echo "<p>Blorm tries to discover posts on your website automaticaly.</p>";
+    echo "<p>If your theme is NOT using the wordpress standard css-classes for styling an article or post you may define here one of your css-classes.<br><br></p>";
+    echo "<input type=\"text\" id=\"blorm_plugin_options_frontend-special_css_class_for_post\" name=\"blorm_plugin_options_frontend[special_css_class_for_post]\" value=\"".$value_special_css_class_for_post."\">";
+
+}
+
+function blorm_plugin_setting_add_special_css_class_post_img() {
+    $options = get_option( 'blorm_plugin_options_frontend' );
+
+    // css class
+    $value_special_css_class_for_post_img = "";
+    if (isset( $options['special_css_class_for_post_img'] )) {
+        $value_special_css_class_for_post_img = $options['special_css_class_for_post_img'];
+    }
+
+    echo "<p>When you decide to render social widget on image, the plugin tries to discover the first image or thumbnail automatic.</p>";
+    echo "<p>If this fails you may define here a css-classes to use on the image-tag.<br><br></p>";
+    echo "<input type=\"text\" id=\"blorm_plugin_options_frontend-special_css_class_for_post_img\" name=\"blorm_plugin_options_frontend[special_css_class_for_post_img]\" value=\"".$value_special_css_class_for_post_img."\">";
 
 }
 
@@ -325,7 +513,7 @@ function blorm_plugin_setting_add_blorm_widget_position() {
 		$value_positionTop = $options['position_widget_menue_adjust_positionTop'];
 	}
 
-	echo "<br><br><label for=\"blorm_plugin_options_frontend-position_widget_menue_adjust_positionTop\">Move widget to the top: </label>";
+	echo "<br><br><label for=\"blorm_plugin_options_frontend-position_widget_menue_adjust_positionTop\">Widget margin-top: </label>";
 	echo "<input type=\"number\" id=\"blorm_plugin_options_frontend-position_widget_menue_adjust_positionTop\" name=\"blorm_plugin_options_frontend[position_widget_menue_adjust_positionTop]\" value=\"".$value_positionTop."\" maxlength=\"4\" size=\"4\">";
 
     // margin right
@@ -334,7 +522,7 @@ function blorm_plugin_setting_add_blorm_widget_position() {
 		$value_positionRight = $options['position_widget_menue_adjust_positionRight'];
 	}
 
-	echo "<br><br><label for=\"blorm_plugin_options_frontend-position_widget_menue_adjust_positionRight\">Move widget to the right: </label>";
+	echo "<br><br><label for=\"blorm_plugin_options_frontend-position_widget_menue_adjust_positionRight\">Widget margin-right: </label>";
 	echo "<input type=\"number\" id=\"blorm_plugin_options_frontend-position_widget_menue_adjust_positionRight\" name=\"blorm_plugin_options_frontend[position_widget_menue_adjust_positionRight]\" value=\"".$value_positionRight."\" maxlength=\"4\" size=\"4\">";
 
     // margin bottom
@@ -343,7 +531,7 @@ function blorm_plugin_setting_add_blorm_widget_position() {
 		$value_positionBottom = $options['position_widget_menue_adjust_positionBottom'];
 	}
 
-	echo "<br><br><label for=\"blorm_plugin_options_frontend-position_widget_menue_adjust_positionBottom\">Move widget to the bottom: </label>";
+	echo "<br><br><label for=\"blorm_plugin_options_frontend-position_widget_menue_adjust_positionBottom\">Widget margin-bottom: </label>";
 	echo "<input type=\"number\" id=\"blorm_plugin_options_frontend-position_widget_menue_adjust_positionBottom\" name=\"blorm_plugin_options_frontend[position_widget_menue_adjust_positionBottom]\" value=\"".$value_positionBottom."\" maxlength=\"4\" size=\"4\">";
 
     // margin left
@@ -352,7 +540,7 @@ function blorm_plugin_setting_add_blorm_widget_position() {
 		$value_positionLeft = $options['position_widget_menue_adjust_positionLeft'];
 	}
 
-	echo "<br><br><label for=\"blorm_plugin_options_frontend-position_widget_menue_adjust_positionLeft\">Move widget to the left: </label>";
+	echo "<br><br><label for=\"blorm_plugin_options_frontend-position_widget_menue_adjust_positionLeft\">Widget margin-left: </label>";
 	echo "<input type=\"number\" id=\"blorm_plugin_options_frontend-position_widget_menue_adjust_positionLeft\" name=\"blorm_plugin_options_frontend[position_widget_menue_adjust_positionLeft]\" value=\"".$value_positionLeft."\" maxlength=\"4\" size=\"4\">";
 
 

@@ -1,21 +1,11 @@
-var Xpost = {
-    reblogs: ' 1 blog1.de, green.de, super.com, hello.org, special.net, usw.de, zbd.de, xxxx.com, web.de, spiegel.de',
-    shares: 'special.net, usw.de, zbd.de, xxxx.com, web.de, spiegel.de',
-    comments: 'green.de, super.com, hello.org, special.net'
-}
-
-var blormAssets = "assets/";
-var blormplus = "<img src=\""+blormAssets+"icons/circle-add-plus-new-outline-stroke.png\" class='blormWidgetImagePlus'>";
-
-var md = new MobileDetect(window.navigator.userAgent);
-
-
-
 class blorm_menue_bar {
 
-    constructor(blormPostData) {
+    constructor(post) {
+
+        this.md = new MobileDetect(window.navigator.userAgent);
 
         /* setup config */
+        this.blormPostData = post;
 
         // path to the plugin assets
         this.blormAssets = blormapp.postConfig.blormAssets;
@@ -36,7 +26,6 @@ class blorm_menue_bar {
         }
 
         // blormapp.postConfig.positionTop
-        this.positionTop = 0;
         if (blormapp.postConfig.positionTop !== "") {
             this.positionTop = blormapp.postConfig.positionTop;
         }
@@ -57,17 +46,17 @@ class blorm_menue_bar {
         }
 
         // config for origin link on widget
-        this.OriginWebsiteName = blormPostData.OriginWebsiteName;
-        this.OriginWebsiteUrl = blormPostData.OriginWebsiteUrl;
+        this.OriginWebsiteName = this.blormPostData.OriginWebsiteName;
+        this.OriginWebsiteUrl = this.blormPostData.OriginWebsiteUrl;
 
         // get the activity_id for the post
-        this.postId = blormPostData.PostId;
+        this.postId = this.blormPostData.PostId;
 
         // init the post data
         //this.initBlormPostData();
-        this.blormPost = blormPostData;
+        this.blormPost = this.blormPostData;
 
-        this.postType = blormPostData.PostType;
+        this.postType = this.blormPostData.PostType;
 
         // prepare social data
         this.setSocialDataCounters();
@@ -189,7 +178,7 @@ class blorm_menue_bar {
         this.handleLayerComments = this.ContainerDisplay.getElementsByClassName("blormWidgetPlusSocialBarComments")[0];
         this.handleLayerLogo = this.ContainerDisplay.getElementsByClassName("blormWidgetPlusLogoIcon")[0];
 
-        if (md.mobile() == null) {
+        if (this.md.mobile() == null) {
 
             for (SocialBar of this.handlePlusSocialBars) {
                 SocialBar.addEventListener(
@@ -264,10 +253,10 @@ class blorm_menue_bar {
                 true
             );
 
-            console.log("init handler finished");
+            console.log("blorm menu "+this.postId+" | init handler finished");
         }
 
-        if (md.mobile() !== null) {
+        if (this.md.mobile() !== null) {
             this.handleLayerLogo.addEventListener(
                 "click",
                 function () {
@@ -451,7 +440,7 @@ class blorm_menue_bar {
 
         this.BlormWidgetPlus.appendChild(this.BlormWidgetPlusLogoIcon);
 
-        if (md.mobile() !== null) {
+        if (this.md.mobile() !== null) {
             this.BlormWidgetPlus.appendChild(this.BlormWidgetPlusBlormInfo);
         }
         this.BlormWidgetPlus.appendChild(this.BlormWidgetPlusSocial);
@@ -501,7 +490,7 @@ class blorm_menue_bar {
         }
 
         //console.log( "md.mobile():" );
-        if ( md.mobile() !== null) {
+        if ( this.md.mobile() !== null) {
             this.BlormWidgetPlusSocial.setAttribute("style","display:none");
             //this.BlormWidgetPowerText.setAttribute("style","display:none");
             this.BlormWidgetPlusBlormInfo.setAttribute("style","display:none");
@@ -529,15 +518,6 @@ class blorm_menue_bar {
         return this.blormWidget;
     }
 
-    GetWidgetClassBoxed(ClassName) {
-
-        this.setPosition(this.ContainerMenu);
-        let ClassBox = document.createElement("div");
-        ClassBox.className = ClassName;
-        ClassBox.innerHTML = this.blormWidget.outerHTML;
-        return ClassBox;
-    }
-
     GetMenue() {
         this.setPosition(this.ContainerMenu);
         if (this.classForWidgetPlacement !== "") {
@@ -548,15 +528,6 @@ class blorm_menue_bar {
         }
         return this.ContainerMenuBox;
     }
-
-    GetMenueClassBoxed(ClassName) {
-        this.setPosition(this.ContainerMenu);
-        let ClassBox = document.createElement("div");
-        ClassBox.className = ClassName;
-        ClassBox.append(this.ContainerMenuBox);
-        return ClassBox;
-    }
-
 
     AddMenueToImage(imgEl) {
 
@@ -576,6 +547,7 @@ class blorm_menue_bar {
         // the div layer for the blormwidget with the menue
         let divLayerWidget = document.createElement('div');
         divLayerWidget.classList.add("blormWidgetImagelayerWidget");
+        /* get the menue widget */
         divLayerWidget.append(blormMenuBar.GetWidget());
 
         let divLayerBlormIconImg = document.createElement('img');
@@ -633,183 +605,5 @@ class blorm_menue_bar {
         }
     }
 
-}; // end blorm class
+} // end blorm class
 
-
-function getPostById(id) {
-
-    let post = {};
-
-    if (typeof blormapp.reblogedPosts[id] !== 'undefined') {
-        post = blormapp.reblogedPosts[id];
-    }
-
-    if (typeof blormapp.blormPosts[id] !== 'undefined') {
-        post = blormapp.blormPosts[id];
-    }
-
-    return post;
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-
-    function insertAfter(newNode, existingNode) {
-        existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
-    }
-
-    console.log("web-app init");
-
-    // reblogged posts are custom post type 'blormpost' and can be dicovered by the css class type-blormpost
-    var allBlormPosts = document.getElementsByClassName("type-blormpost");
-    Array.from(allBlormPosts).forEach(function(BlormPost){
-
-        // the 'blorm-post-data'-container holds the relevant postdata we need to connect with the remote data
-        let BlormPostContainer = BlormPost.getElementsByClassName("blorm-post-data")[0];
-        let id = BlormPostContainer.dataset.postid;
-        let postData = getPostById(id);
-
-        console.log("__ start init post type-blormpost id:" + postData.PostId + " for website: "+postData.OriginWebsiteName);
-
-
-        // exchange all links in the blorm posts
-        /*if (Object.keys(postData).length !== 0) {
-            // if the post is a reblog and not a shared post we want to change the urls to the origin post
-            if (BlormPost.classList.contains("blorm-rebloged")) {
-                let BlormPostLinks = BlormPost.getElementsByTagName('a');
-                if (BlormPostLinks.length > 0) {
-                    Array.from(BlormPostLinks).forEach(function (BlormPostLink) {
-                        if (!BlormPostContainer.classList.contains("post-thumbnail")) {
-                            BlormPostLink.href = postData.TeaserUrl;
-                        }
-                    });
-                }
-            }
-        }*/
-
-        // integrate the widget in the posts. first way put the widget on the image
-        if (BlormPost.classList.contains("blormwidget-on-image-post")) {
-            if (Object.keys(postData).length !== 0) {
-                // this is the menue bar inside the image container
-                blormMenuBar = new blorm_menue_bar(postData)
-
-                if( BlormPost.getElementsByTagName('img').length > 0) {
-                    // there is an image
-                    // img element that will be wrapped
-                    var imgEl = BlormPost.getElementsByTagName('img')[0];
-                    blormMenuBar.AddMenueToImage(imgEl);
-                    //return;
-                }
-            }
-        };
-
-        // second possibility add the widget to the content
-        if (BlormPost.classList.contains("blormwidget-add-to-content")) {
-
-            var allBlormWidgets = BlormPost.getElementsByClassName("blormWidget");
-            Array.from(allBlormWidgets).forEach(function(BlormWidget){
-                if (Object.keys(postData).length !== 0) {
-                    blormMenuBar = new blorm_menue_bar(postData);
-                    if (BlormWidget.parentNode.getAttribute('href') !== null) {
-                        insertAfter(blormMenuBar.GetWidget(),BlormWidget.parentNode);
-                    } else {
-                        BlormWidget.appendChild(blormMenuBar.GetMenue());
-                    }
-                }
-            }, postData);
-        };
-
-        console.log("_ finished init post type-blormpost id:" + postData.PostId + " for website: "+postData.OriginWebsiteName);
-
-    });
-
-    // add blormwidgets to the wordpress-widget-box
-    var allBlormDisplayPostsWidgetElements = document.getElementsByClassName("blorm-display-posts-widget-element");
-    Array.from(allBlormDisplayPostsWidgetElements).forEach(function(BlormPost){
-
-        // the container holds the data
-        let id = BlormPost.dataset.postid;
-        post = getPostById(id);
-
-        console.log("__ start init posts type-blormpost in widget id:" + post.PostId + " for website: "+post.OriginWebsiteName);
-
-
-        if (Object.keys(post).length !== 0) {
-
-            // if the post is a reblog we want to change the urls to the origin post
-            let BlormPostLinks = BlormPost.getElementsByTagName('a');
-            if (BlormPostLinks.length > 0) {
-                Array.from(BlormPostLinks).forEach(function (BlormPostLink) {
-                    BlormPostLink.href = post.TeaserUrl;
-                });
-            }
-
-            // this is the menue bar inside the image container
-            blormMenuBar = new blorm_menue_bar(post)
-            if( BlormPost.getElementsByTagName('img').length > 0) {
-                // there is an image
-
-                // img element that will be wrapped
-                var imgEl = BlormPost.getElementsByTagName('img')[0];
-                blormMenuBar.AddMenueToImage(imgEl);
-            }
-        }
-
-        console.log("_ finished init post type-blormpost in widget id:" + post.PostId + " for website: "+post.OriginWebsiteName);
-
-
-    });
-
-    // reblogged posts are custom post type 'blormpost' and can be dicovered by the css class type-blormpost
-    var allBlormPosts = document.getElementsByClassName("blorm-shared");
-    Array.from(allBlormPosts).forEach(function(BlormPost){
-
-        if ( BlormPost.getElementsByClassName("blorm-post-data")[0] !== null ) {
-            let BlormPostContainer = BlormPost.getElementsByClassName("blorm-post-data")[0];
-            let id = BlormPostContainer.dataset.postid;
-            let postData = getPostById(id);
-
-            console.log("__ start init post blorm-shared id:" + postData.PostId + " for website: "+postData.OriginWebsiteName);
-
-            // integrate the widget in the posts. first way put the widget on the image
-            if (BlormPost.classList.contains("blormwidget-on-image-post")) {
-                // the container holds the data
-                let BlormPostContainer = BlormPost.getElementsByClassName("blorm-post-data")[0];
-                let id = BlormPostContainer.dataset.postid;
-                post = getPostById(id);
-
-                if (Object.keys(post).length !== 0) {
-
-                    // this is the menue bar inside the image container
-                    blormMenuBar = new blorm_menue_bar(post)
-
-                    if( BlormPost.getElementsByTagName('img').length > 0) {
-                        // there is an image
-
-                        // img element that will be wrapped
-                        var imgEl = BlormPost.getElementsByTagName('img')[0];
-                        blormMenuBar.AddMenueToImage(imgEl);
-                    }
-                }
-            };
-
-            // second possibility add the widget to the content
-            if (BlormPost.classList.contains("blormwidget-add-to-content")) {
-                var allBlormWidgets = BlormPost.getElementsByClassName("blormWidget");
-                Array.from(allBlormWidgets).forEach(function(BlormWidget){
-                    if (Object.keys(postData).length !== 0) {
-                        blormMenuBar = new blorm_menue_bar(postData);
-                        if (BlormWidget.parentNode.getAttribute('href') !== null) {
-                            insertAfter(blormMenuBar.GetWidget(),BlormWidget.parentNode);
-                        } else {
-                            BlormWidget.appendChild(blormMenuBar.GetMenue());
-                        }
-
-                    }
-                }, postData);
-            };
-
-            console.log("_ finished init post blorm-shared id:" + postData.PostId + " for website: "+postData.OriginWebsiteName);
-
-        }
-    });
-});

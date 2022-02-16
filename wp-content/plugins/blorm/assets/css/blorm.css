@@ -47,28 +47,46 @@
     background-color: #ffff94;
 }
 
-
-/* user profile */
-.BlormUserProfile .BlormUserProfileBox {
+.BlormContentBoxWhite {
     padding:0.5rem 0.5rem 0.5rem 0.5rem;
     border:1px solid #eee;
     background-color: rgb(252, 252, 252);
 }
 
+.BlormContentBoxDark {
+    padding:0.5rem 0.5rem 0.5rem 0.5rem;
+    border:1px solid #a7aaad;
+    background-color: #23282d;
+    color: #f0f0f1;
+}
+
+/* user profile */
+#BlormNotifications {
+    margin-bottom: 1rem;
+}
+
+.el-dropdown-menu__item.BlormNotificationElDropdownMenuIsRead {
+    color: #ddd;
+}
+
+.BlormNotfificationMenu span.material-icons {
+    cursor: pointer;
+}
+
 .BlormUserProfile .BlormUserProfileNameBox,
 .BlormUserProfile .BlormUserProfileImageBox {
-    width:25%;
+    width:33%;
     float:left;
 }
 
 .BlormUserProfile .BlormUserProfileInfoBox {
-    width:25%;
+    width:33%;
     float:left;
     text-align: left;
 }
 
 .BlormUserProfile .BlormUserProfileEdit {
-    width:25%;
+    width:33%;
     float:left;
     text-align: left;
 }
@@ -147,31 +165,51 @@
 
 .BlormFeedHeader {
     margin-bottom: 1rem;
-    padding:0.5rem 0.5rem 0.5rem 0.5rem;
-    border:1px solid #eee;
-    background-color: rgb(252, 252, 252);
     text-align: right;
 }
 
 .BlormFeedPost {
     margin-bottom: 3rem;
-    padding:0.5rem 0.5rem 1rem 0.5rem;
-    border:1px solid #eee;
-    background-color: rgb(252, 252, 252);
 }
 
 .BlormFeedPost.sharedpost {
     background-color: darkgrey;
 }
 
-.BlormFeedPost .blorm-feed-post-headline {
+#dashboard-widgets .BlormFeedPost H2.BlormFeedTitle,
+.BlormFeedPost H2.BlormFeedTitle {
+    font-size: 20px;
+    padding: 5px 0 10px 0;
+}
+
+#dashboard-widgets .BlormFeedPost H2.BlormFeedTitle a,
+.BlormFeedPost H2.BlormFeedTitle a {
+    text-decoration: none;
+}
+
+#dashboard-widgets .BlormFeedPost H2.BlormFeedTitle a:hover,
+.BlormFeedPost H2.BlormFeedTitle a:hover {
+    text-decoration: underline;
+}
+
+.BlormFeedPost .BlormFeedPostHeadline {
     width:75%;
     display: inline-block;
 }
 
-.BlormFeedPost .blorm-feed-post-headline span.BlormFeedHeadlineUser {
+.BlormFeedPost .BlormFeedPostHeadline span.BlormFeedHeadlineUser {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.BlormFeedPostContent a {
+    text-decoration: none;
+    color: #3c434a;
+}
+
+.BlormFeedPostContent a:hover {
+    text-decoration: underline;
+    color: #3c434a;
 }
 
 .BlormFeedImage img {
@@ -194,7 +232,7 @@
 }
 
 .BlormFeedEdit--Mod button {
-    margin-top: 1.75rem;
+    margin-top: 1.25rem;
 }
 
 .BlormFeedPostcomment_Content {
@@ -247,6 +285,17 @@
 }
 
 
+.BlormFeedPostReactionsBlormhandle {
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.BlormFeedPostReactions .material-icons {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
 
 
 /* feedback layer */
@@ -274,9 +323,20 @@
     margin-bottom: 10px;
 }
 
+
 .hndle.ui-sortable-handle {
     background-color: #23282d;
     color:#fff;
+    border-bottom: 0;
+}
+
+.postbox-header .handle-actions {
+
+    background-color: #23282d;
+}
+
+.postbox .handle-order-higher {
+    border-bottom: 1px solid #c3c4c7;
 }
 
 /*.BlormFollowerListUsers .card {

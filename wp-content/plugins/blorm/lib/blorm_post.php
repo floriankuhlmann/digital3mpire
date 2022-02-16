@@ -18,8 +18,16 @@ function create_post_type_blormpost() {
     register_post_type( $type, $arguments);
 }
 
-// change the links of the page to redirect direct to external posts on the origin source
+// filter for custom_post_types; change the link of the post to redirect direct to external origin source of the post
 add_filter('post_type_link', 'blormpost_type_link', 1, 2);
-function blormpost_type_link( $link, $post = 0 ){
-    return get_post_meta($post->ID, 'blorm_reblog_teaser_url')[0];
+function blormpost_type_link( $link, $post ){
+
+    // we only want to change blormpost custom post types
+    if ( 'blormpost' == get_post_type($post)) {
+        $blorm_reblog_link = get_post_meta($post->ID, 'blorm_reblog_teaser_url', true);
+        if ($blorm_reblog_link == "") return $link;
+        return $blorm_reblog_link;
+    }
+
+    return $link;
 }
