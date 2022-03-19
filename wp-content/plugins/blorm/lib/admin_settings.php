@@ -90,7 +90,8 @@ function blorm_plugin_options_page_submit() {
 
 			$blorm_plugin_options_api['api_key'] = trim($_POST['blorm_plugin_options_api']['api_key']);
 			if (preg_match('/^[a-z0-9]{60}$/i', $blorm_plugin_options_api['api_key'])) {
-				update_option('blorm_plugin_options_api', $blorm_plugin_options_api);
+                blorm_cron_getstream_user_exec();
+                update_option('blorm_plugin_options_api', $blorm_plugin_options_api);
 			}
 
 			if (sizeof($_POST['blorm_plugin_options_frontend']) != 0) {

@@ -28,14 +28,14 @@ function getUserAccountDataFromBlorm() {
 
     $user = new stdClass();
     $user->name = $userObjects->name;
-    $user->blormhandle = $userObjects->blormhandle;
+    $user->blormHandle = $userObjects->blormhandle;
     $user->id = $userObjects->id;
-    $user->photo_url = $userObjects->photo_url;
-    $user->website_id = $userObjects->website_id;
-    $user->website_name = $userObjects->website_name;
-    $user->website_href = $userObjects->website_href;
-    $user->website_category = $userObjects->website_category;
-    $user->website_type = $userObjects->website_type;
+    $user->photoUrl = $userObjects->photo_url;
+    $user->websiteId = $userObjects->website_id;
+    $user->websiteName = $userObjects->website_name;
+    $user->websiteUrl = $userObjects->website_href;
+    $user->category = $userObjects->website_category;
+    $user->websiteType = $userObjects->website_type;
 
     $returnObj->user = $user;
 

@@ -172,6 +172,10 @@
     margin-bottom: 3rem;
 }
 
+.BlormFeedEdit button {
+    cursor: pointer;
+}
+
 .BlormFeedPost.sharedpost {
     background-color: darkgrey;
 }
@@ -233,6 +237,7 @@
 
 .BlormFeedEdit--Mod button {
     margin-top: 1.25rem;
+    cursor: pointer;
 }
 
 .BlormFeedPostcomment_Content {

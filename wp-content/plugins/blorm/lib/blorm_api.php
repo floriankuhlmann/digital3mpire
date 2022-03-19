@@ -267,9 +267,14 @@ function postRequestLocalPostsUpdate($request, $response) {
                     "post_title" => "<span class=\'blorm_reblog\'>" . $requestBodyObj->{'origin_post_data'}->{'headline'} . "</span>",
                     "post_content" => $requestBodyObj->{'origin_post_data'}->{'text'},
                     "post_status" => "publish",
-                    "post_category" => array("Blorm"),
+                    //"post_category" => array("Blorm"),
                     "post_type" => "blormpost"
                 ));
+
+                $options = get_option( 'blorm_plugin_options_category' );
+                if (isset( $options['blorm_category_show_reblogged'] )) {
+                    wp_set_post_categories( $post_id, array( $options['blorm_category_show_reblogged']), true );
+                }
 
                 add_post_meta($post_id, "blorm_reblog_teaser_image", $requestBodyObj->{'origin_post_data'}->{'image'});
                 add_post_meta($post_id, "blorm_reblog_teaser_url", $requestBodyObj->{'origin_post_data'}->{'url'});

@@ -76,14 +76,14 @@ function getConfigJs() {
     $userdata =  "var blormapp = {
                     account : {
                         \"name\": \"".$blormUserAccountData->user->name."\",
-                        \"blormhandle\": \"".$blormUserAccountData->user->blormhandle."\",
+                        \"blormHandle\": \"".$blormUserAccountData->user->blormHandle."\",
                         \"id\": \"".$blormUserAccountData->user->id."\",
-                        \"photo_url\": \"".$blormUserAccountData->user->photo_url."\",
-                        \"website_name\": \"".$blormUserAccountData->user->website_name."\",
-                        \"website_href\": \"".$blormUserAccountData->user->website_href."\",
-                        \"website_category\": \"".$blormUserAccountData->user->website_category."\",
-                        \"website_type\": \"".$blormUserAccountData->user->website_type."\",
-                        \"website_id\": \"".$blormUserAccountData->user->website_id."\",
+                        \"photoUrl\": \"".$blormUserAccountData->user->photoUrl."\",
+                        \"websiteName\": \"".$blormUserAccountData->user->websiteName."\",
+                        \"websiteUrl\": \"".$blormUserAccountData->user->websiteUrl."\",
+                        \"category\": \"".$blormUserAccountData->user->category."\",
+                        \"websiteType\": \"".$blormUserAccountData->user->websiteType."\",
+                        \"websiteId\": \"".$blormUserAccountData->user->websiteId."\",
                     },
                     recentPosts: [\n";
 
@@ -91,6 +91,7 @@ function getConfigJs() {
     $recent_posts = wp_get_recent_posts();
     foreach ($recent_posts as $recent_post) {
 
+		// TODO try to json_encode the strings
         $teasertext = str_replace("\n","",filter_var(get_the_excerpt($recent_post['ID']), FILTER_SANITIZE_STRING));
         $teasertext = str_replace("\"","'",$teasertext);
 

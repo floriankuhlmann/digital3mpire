@@ -22,11 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 blormWidgetMenuBar = blormWidgetBuilder.GetBlormWidgetContainer(postData);
 
                 if (blormapp.postConfig.specialCssClassForPostImg !== "") {
-                    console.log(blormapp.postConfig.specialCssClassForPostImg );
                     var imgEl = BlormPost.getElementsByClassName(blormapp.postConfig.specialCssClassForPostImg)[0];
-                    console.log(imgEl);
                     if (typeof imgEl !== "undefined") {
-                        //blormMenuBar.AddMenueToImage(imgEl);
                         blormWidgetBuilder.AddMenueToImage(imgEl, blormWidgetMenuBar);
                     }
                 } else {
@@ -34,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         // there is an image
                         // img element that will be wrapped
                         var imgEl = BlormPost.getElementsByTagName('img')[0];
+                        console.log("the imgEl");
                         console.log(imgEl);
-                        //blormMenuBar.AddMenueToImage(imgEl);
                         blormWidgetBuilder.AddMenueToImage(imgEl, blormWidgetMenuBar);
                         //return;
                     }
